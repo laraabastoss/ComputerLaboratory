@@ -22,7 +22,7 @@ https://github.com/laraabastoss/ComputerLaboratory/assets/92671491/e84edbdc-2d75
 </div>
 
 
-**Technologies Used:** C, Minix operating system
+**Technologies Used:** C
 
 **Group:**
 - Bruno Miguel de Siuéia Duvane (up202109244)
