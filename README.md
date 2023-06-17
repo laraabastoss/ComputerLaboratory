@@ -29,3 +29,5 @@ https://github.com/laraabastoss/ComputerLaboratory/assets/92671491/e84edbdc-2d75
 - Carlos Manuel da Silva Costa (up202004151)
 - Lara Santos Bastos (up202108740)
 - Rita Gonçalves Pereira (up202108746)
+
+**Project Repository:** https://github.com/laraabastoss/ComputerLaboratory/tree/main/proj
