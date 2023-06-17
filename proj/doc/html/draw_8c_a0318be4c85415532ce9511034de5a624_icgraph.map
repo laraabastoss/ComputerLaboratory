@@ -1,0 +1,31 @@
+<map id="lost_menu" name="lost_menu">
+<area shape="rect" id="Node000001" title="draws the menu for when the user loses a level" alt="" coords="658,187,739,212"/>
+<area shape="rect" id="Node000002" href="$draw_8c.html#a9b1720e8984c61a5866361e5234bfc8a" title="draws a new frame depending on the current state of the game" alt="" coords="524,187,610,212"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="643,202,610,202,610,197,643,197"/>
+<area shape="rect" id="Node000003" href="$draw_8c.html#a9f1c87c7296779c4c895ca2b13ad2e3e" title="draws the game screen" alt="" coords="359,5,412,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,174,521,119,500,90,475,64,442,46,409,34,411,29,444,41,478,60,504,86,525,116,555,172"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a46fea93bf5d63e93090fbb95b742b881" title=" " alt="" coords="162,243,246,268"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="537,179,508,161,475,147,425,133,383,126,343,130,295,147,266,167,243,193,213,243,209,241,239,190,263,163,293,142,342,124,383,121,426,128,477,142,511,156,540,175"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,164,114,190"/>
+<area shape="poly" id="edge18_Node000002_Node000005" title=" " alt="" coords="546,176,515,144,496,129,475,118,422,103,367,98,311,101,257,110,159,138,89,166,87,161,157,133,255,105,310,96,367,93,423,98,477,113,499,125,519,140,550,173"/>
+<area shape="rect" id="Node000006" href="$handle__int_8c.html#a5587175760c801902df41c23595504e5" title="interacts with the game everytime there is a keyboard interrupt, moving the characters according to t..." alt="" coords="315,157,455,183"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="509,193,455,184,456,179,510,188"/>
+<area shape="rect" id="Node000007" href="$handle__int_8c.html#a293e68cd22ee8891ead7e26c7ce81653" title="interacts with the game everytime there is a keyboard interrupt in the multiplayer mode,..." alt="" coords="313,207,458,248"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="510,211,459,219,458,214,509,206"/>
+<area shape="rect" id="Node000008" href="$handle__int_8c.html#ad9a0ce174cc6729af07e0dd89bc924bc" title="interacts with the game everytime there is a mouse interrupt and the right button is clicked,..." alt="" coords="305,272,465,298"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="540,223,511,244,477,262,445,274,444,269,475,257,508,239,537,219"/>
+<area shape="rect" id="Node000009" href="$handle__int_8c.html#ac26df66d75851dc8f7d1706e2daa70ff" title="interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the..." alt="" coords="334,321,436,347"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="554,227,523,271,502,293,478,312,438,329,436,324,475,308,498,289,519,267,549,224"/>
+<area shape="rect" id="Node000010" href="$handle__int_8c.html#a3805e8c0c25474ab315fa8b95eb5dea0" title="interacts with the game everytime there is a timer interrupt, used for the characters jumps and to mo..." alt="" coords="327,371,443,396"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="560,227,549,259,532,295,508,331,478,362,445,378,443,373,475,357,504,328,527,292,544,257,555,226"/>
+<area shape="rect" id="Node000011" href="$handle__int_8c.html#a66ed4cf9cdbf28ab9a0e13173a373ef9" title="interacts with the game everytime there is a serial port interrupt in the multiplayer mode,..." alt="" coords="294,420,476,446"/>
+<area shape="poly" id="edge16_Node000002_Node000011" title=" " alt="" coords="564,228,555,268,539,318,514,368,498,391,478,411,461,422,459,417,475,407,494,387,510,365,534,316,550,267,559,226"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="427,13,453,21,478,36,512,72,537,114,555,154,566,185,561,187,550,156,533,117,507,76,475,40,451,26,426,18"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="165,238,84,193,86,188,167,233"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="313,191,295,198,255,221,223,244,220,240,252,216,293,193,311,186"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="298,244,247,252,246,246,297,238"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="290,272,246,265,247,260,291,267"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="319,322,293,313,254,292,222,271,225,267,257,288,295,308,321,317"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="312,371,293,362,266,340,242,315,211,270,215,267,246,312,269,337,295,357,314,367"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="298,415,292,411,259,377,234,337,217,299,207,270,212,268,222,297,239,335,264,374,296,407,301,410"/>
+</map>

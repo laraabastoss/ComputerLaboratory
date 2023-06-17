@@ -1,0 +1,7 @@
+<map id="display_time" name="display_time">
+<area shape="rect" id="Node000001" title="displays the game date (day, month year, hour and minute) according to the data received by the RTC" alt="" coords="5,5,100,31"/>
+<area shape="rect" id="Node000002" href="$sprite__management_8c.html#a358dde0e0e62eb0399a63639c27089e6" title="draw a new Sprite" alt="" coords="148,5,231,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,16,133,16,133,21,100,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a950e17209d152e8a40ec064a0b201b25" title="draws one pixel in the screen" alt="" coords="279,5,362,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,16,264,16,264,21,231,21"/>
+</map>

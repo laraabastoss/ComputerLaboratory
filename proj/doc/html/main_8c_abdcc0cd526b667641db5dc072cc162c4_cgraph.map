@@ -1,0 +1,28 @@
+<map id="teardown" name="teardown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,195,80,220"/>
+<area shape="rect" id="Node000002" href="$sprites_8c.html#a8fdbc6c7bfca3ef4a8800a3cdc19d932" title=" " alt="" coords="172,5,282,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,194,53,162,68,121,92,77,126,40,156,24,159,29,129,44,97,80,73,123,58,164,49,195"/>
+<area shape="rect" id="Node000004" href="$elements_8c.html#aec06b94fd6e4befc36f02655e74546f4" title=" " alt="" coords="174,55,280,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="47,193,76,143,99,115,126,91,159,75,161,80,129,95,103,118,81,146,52,196"/>
+<area shape="rect" id="Node000005" href="$keyboard_8c.html#a97f07efdc4bf5955236db1b8f111daf6" title="unsubscribes the keyboard interrupts" alt="" coords="151,105,303,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="62,192,126,154,141,148,143,153,129,159,64,196"/>
+<area shape="rect" id="Node000006" href="$mouse_8c.html#adaf9bbdd3ddda1b50021f21c37df1c9c" title="unsuncribes the mouse interrupts" alt="" coords="128,169,326,195"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="80,200,114,195,115,200,81,205"/>
+<area shape="rect" id="Node000007" href="$mouse_8c.html#a1703c3c5b61eef30d724b15cafd1d75e" title="writes commands directly to the KBC" alt="" coords="179,219,275,244"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="81,210,165,221,164,226,80,215"/>
+<area shape="rect" id="Node000011" href="$rtc_8c.html#ae0e5cb47db8832528abb7dc48255cd3a" title=" " alt="" coords="140,268,314,294"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="64,219,94,237,129,254,147,261,145,266,127,259,91,242,62,223"/>
+<area shape="rect" id="Node000012" href="$serial__port_8c.html#a552cfbe43f5bd3b63c79ca505337dd57" title="subscribes the serial port interrupts" alt="" coords="140,317,314,343"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="53,219,83,262,104,285,129,304,138,309,135,313,126,308,101,289,79,265,49,222"/>
+<area shape="rect" id="Node000013" href="$timer_8c.html#a34c22ebdcbc43e47f0ad8406704d3610" title="unsubscribes timer interrupts" alt="" coords="133,367,321,392"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="50,220,60,248,76,285,99,322,129,353,135,357,132,361,126,358,94,325,71,287,55,250,45,222"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#af16c6befaac9ffb673b9e3c798d542ed" title=" " alt="" coords="397,5,500,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="282,16,381,16,381,21,282,21"/>
+<area shape="rect" id="Node000008" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="743,219,833,244"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="275,229,728,229,728,234,275,234"/>
+<area shape="rect" id="Node000009" href="$_k_b_c_8c.html#a34b653b3939fffe883c903cdadb36d3a" title=" " alt="" coords="374,244,522,270"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="275,234,360,244,359,249,275,240"/>
+<area shape="rect" id="Node000010" href="$_k_b_c_8c.html#ac024af91b156e4fc61ee3886b891de21" title=" " alt="" coords="570,244,695,270"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="523,254,555,254,555,260,523,260"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="695,244,727,239,728,244,695,249"/>
+</map>

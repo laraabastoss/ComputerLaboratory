@@ -1,0 +1,13 @@
+<map id="write_command_KBC" name="write_command_KBC">
+<area shape="rect" id="Node000001" title="writes a command to the KBC" alt="" coords="388,55,536,80"/>
+<area shape="rect" id="Node000002" href="$mouse_8c.html#a992b768e15649cf99e80d440833cce35" title="activates the data reporto to the mouse" alt="" coords="162,5,340,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="389,53,309,34,310,29,390,48"/>
+<area shape="rect" id="Node000004" href="$mouse_8c.html#af9960b80be8f309c291975a306d07fe7" title="activates the mouse stream" alt="" coords="171,55,331,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="374,70,332,70,332,65,374,65"/>
+<area shape="rect" id="Node000005" href="$mouse_8c.html#a486c1569b6a42a012e7b894e04f215d2" title="descativates the mouse" alt="" coords="187,104,315,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="390,87,310,106,309,101,389,82"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,55,114,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,38,113,57,112,51,183,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="156,70,114,70,114,65,156,65"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="183,102,112,84,113,78,184,97"/>
+</map>

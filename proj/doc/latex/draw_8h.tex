@@ -1,0 +1,261 @@
+\doxysection{game/draw.h File Reference}
+\hypertarget{draw_8h}{}\label{draw_8h}\index{game/draw.h@{game/draw.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}sprites/sprite\+\_\+management.\+h\"{}}\newline
+{\ttfamily \#include \"{}sprites/sprite.\+h\"{}}\newline
+{\ttfamily \#include \"{}handle\+\_\+int.\+h\"{}}\newline
+Include dependency graph for draw.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{draw_8h_a9b1720e8984c61a5866361e5234bfc8a}{new\+\_\+frame}} ()
+\begin{DoxyCompactList}\small\item\em draws a new frame depending on the current state of the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_a405142995603cec467b0249b03a06471}{initial\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em draw the initial menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_a9f1c87c7296779c4c895ca2b13ad2e3e}{game}} ()
+\begin{DoxyCompactList}\small\item\em draws the game screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_a905d6b578849eb315f945f9a8a551473}{won\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em draws the menu for when the user wins a level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_a0318be4c85415532ce9511034de5a624}{lost\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em draws the menu for when the user loses a level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_aff9b68bd23dc760b910e852b5144ee0e}{wait\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em draws the menu for when, in the multiplayer mode, the first player is waiting for the second one to connect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_a4eb8933c334d8d88e9ff0b0d1152951c}{display\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em displays the game date (day, month year, hour and minute) according to the data received by the RTC \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw_8h_a3ad9f04212e7602618a0dd7ad4afbd4e}{set\+\_\+frame\+\_\+buffers}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em sets the frame buffers \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{draw_8h_a4eb8933c334d8d88e9ff0b0d1152951c}\label{draw_8h_a4eb8933c334d8d88e9ff0b0d1152951c} 
+\index{draw.h@{draw.h}!display\_time@{display\_time}}
+\index{display\_time@{display\_time}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{display\_time()}{display\_time()}}
+{\footnotesize\ttfamily void display\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+displays the game date (day, month year, hour and minute) according to the data received by the RTC 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{draw_8h_a4eb8933c334d8d88e9ff0b0d1152951c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a4eb8933c334d8d88e9ff0b0d1152951c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_a9f1c87c7296779c4c895ca2b13ad2e3e}\label{draw_8h_a9f1c87c7296779c4c895ca2b13ad2e3e} 
+\index{draw.h@{draw.h}!game@{game}}
+\index{game@{game}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{game()}{game()}}
+{\footnotesize\ttfamily void game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the game screen 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a9f1c87c7296779c4c895ca2b13ad2e3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a9f1c87c7296779c4c895ca2b13ad2e3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_a405142995603cec467b0249b03a06471}\label{draw_8h_a405142995603cec467b0249b03a06471} 
+\index{draw.h@{draw.h}!initial\_menu@{initial\_menu}}
+\index{initial\_menu@{initial\_menu}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{initial\_menu()}{initial\_menu()}}
+{\footnotesize\ttfamily void initial\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draw the initial menu 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{draw_8h_a405142995603cec467b0249b03a06471_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a405142995603cec467b0249b03a06471_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_a0318be4c85415532ce9511034de5a624}\label{draw_8h_a0318be4c85415532ce9511034de5a624} 
+\index{draw.h@{draw.h}!lost\_menu@{lost\_menu}}
+\index{lost\_menu@{lost\_menu}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{lost\_menu()}{lost\_menu()}}
+{\footnotesize\ttfamily void lost\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the menu for when the user loses a level 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{draw_8h_a0318be4c85415532ce9511034de5a624_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a0318be4c85415532ce9511034de5a624_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_a9b1720e8984c61a5866361e5234bfc8a}\label{draw_8h_a9b1720e8984c61a5866361e5234bfc8a} 
+\index{draw.h@{draw.h}!new\_frame@{new\_frame}}
+\index{new\_frame@{new\_frame}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{new\_frame()}{new\_frame()}}
+{\footnotesize\ttfamily void new\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws a new frame depending on the current state of the game 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a9b1720e8984c61a5866361e5234bfc8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a9b1720e8984c61a5866361e5234bfc8a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_a3ad9f04212e7602618a0dd7ad4afbd4e}\label{draw_8h_a3ad9f04212e7602618a0dd7ad4afbd4e} 
+\index{draw.h@{draw.h}!set\_frame\_buffers@{set\_frame\_buffers}}
+\index{set\_frame\_buffers@{set\_frame\_buffers}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffers()}{set\_frame\_buffers()}}
+{\footnotesize\ttfamily int set\+\_\+frame\+\_\+buffers (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+sets the frame buffers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & submode desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+o in case of success and 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{draw_8h_a3ad9f04212e7602618a0dd7ad4afbd4e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{draw_8h_a3ad9f04212e7602618a0dd7ad4afbd4e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_aff9b68bd23dc760b910e852b5144ee0e}\label{draw_8h_aff9b68bd23dc760b910e852b5144ee0e} 
+\index{draw.h@{draw.h}!wait\_menu@{wait\_menu}}
+\index{wait\_menu@{wait\_menu}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{wait\_menu()}{wait\_menu()}}
+{\footnotesize\ttfamily void wait\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the menu for when, in the multiplayer mode, the first player is waiting for the second one to connect 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{draw_8h_aff9b68bd23dc760b910e852b5144ee0e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_aff9b68bd23dc760b910e852b5144ee0e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw_8h_a905d6b578849eb315f945f9a8a551473}\label{draw_8h_a905d6b578849eb315f945f9a8a551473} 
+\index{draw.h@{draw.h}!won\_menu@{won\_menu}}
+\index{won\_menu@{won\_menu}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{won\_menu()}{won\_menu()}}
+{\footnotesize\ttfamily void won\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the menu for when the user wins a level 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{draw_8h_a905d6b578849eb315f945f9a8a551473_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a905d6b578849eb315f945f9a8a551473_icgraph}
+\end{center}
+\end{figure}

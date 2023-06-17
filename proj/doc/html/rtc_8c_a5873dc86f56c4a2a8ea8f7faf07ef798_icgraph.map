@@ -1,0 +1,11 @@
+<map id="rtc_is_binary" name="rtc_is_binary">
+<area shape="rect" id="Node000001" title=" " alt="" coords="392,31,488,56"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ad9799f13e0670cb1748baae02f15ca5a" title=" " alt="" coords="263,5,344,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,35,344,28,345,23,378,29"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a9e961a2e8e8309e4fd490ac35f68a293" title=" " alt="" coords="266,55,341,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="378,57,342,64,341,58,377,52"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a099d48038e444c2f3e69904477527798" title=" " alt="" coords="162,55,215,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,70,216,70,216,65,251,65"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,55,114,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,70,114,70,114,65,147,65"/>
+</map>

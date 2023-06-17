@@ -1,0 +1,12 @@
+<map id="devices/timer/timer.h" name="devices/timer/timer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="151,5,293,31"/>
+<area shape="rect" id="Node000002" href="$timer_8c.html" title=" " alt="" coords="5,79,148,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,40,102,81,100,76,183,35"/>
+<area shape="rect" id="Node000003" href="$game_8h.html" title=" " alt="" coords="172,79,272,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,46,225,79,219,79,219,46"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title=" " alt="" coords="280,153,340,178"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="251,38,270,56,287,78,303,117,311,152,306,153,298,119,282,80,266,60,248,42"/>
+<area shape="rect" id="Node000004" href="$game_8c.html" title=" " alt="" coords="156,153,256,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="219,120,211,153,206,152,213,118"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="250,112,297,150,293,154,246,116"/>
+</map>

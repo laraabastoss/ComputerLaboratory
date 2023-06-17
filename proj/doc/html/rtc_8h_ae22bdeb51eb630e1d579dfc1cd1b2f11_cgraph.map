@@ -1,0 +1,12 @@
+<map id="rtc_update_time" name="rtc_update_time">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,120,82"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a47d5762e49eb390b04a09fc319c4e047" title=" " alt="" coords="168,5,277,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,53,165,33,167,39,106,58"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a8e4030507a3afad53e5b80851f90d193" title=" " alt="" coords="325,31,404,56"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="120,61,310,45,310,51,120,67"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#a891509fed13e0cac396e9c401f887d72" title=" " alt="" coords="185,107,260,132"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="106,80,172,101,171,106,105,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="278,25,311,31,310,37,277,31"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="452,31,543,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="405,41,438,41,438,46,405,46"/>
+</map>

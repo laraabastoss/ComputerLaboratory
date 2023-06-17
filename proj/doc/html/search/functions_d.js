@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['set_5fframe_5fbuffer_0',['set_frame_buffer',['../graphics_8c.html#aac76f9080a6fb1e87028669d779a6a4a',1,'set_frame_buffer(uint16_t submode, uint8_t **frame_buffer):&#160;graphics.c'],['../graphics_8h.html#aac76f9080a6fb1e87028669d779a6a4a',1,'set_frame_buffer(uint16_t submode, uint8_t **frame_buffer):&#160;graphics.c']]],
+  ['set_5fframe_5fbuffers_1',['set_frame_buffers',['../draw_8c.html#a3ad9f04212e7602618a0dd7ad4afbd4e',1,'set_frame_buffers(uint16_t mode):&#160;draw.c'],['../draw_8h.html#a3ad9f04212e7602618a0dd7ad4afbd4e',1,'set_frame_buffers(uint16_t mode):&#160;draw.c']]],
+  ['sp_5fprocess_5fdata_2',['sp_process_data',['../serial__port_8c.html#a8e55a1f2b327253d3b3afee07acb1109',1,'sp_process_data():&#160;serial_port.c'],['../serial__port_8h.html#a8e55a1f2b327253d3b3afee07acb1109',1,'sp_process_data():&#160;serial_port.c']]],
+  ['sp_5fsend_5fdata_3',['sp_send_data',['../serial__port_8c.html#a954bb0921ea9c4741503e6ae0689039f',1,'sp_send_data(uint8_t data):&#160;serial_port.c'],['../serial__port_8h.html#a954bb0921ea9c4741503e6ae0689039f',1,'sp_send_data(uint8_t data):&#160;serial_port.c']]],
+  ['sp_5fsubscribe_5finterrupts_4',['sp_subscribe_interrupts',['../serial__port_8c.html#af6a48302ff00de7da3133360c0212275',1,'sp_subscribe_interrupts():&#160;serial_port.c'],['../serial__port_8h.html#af6a48302ff00de7da3133360c0212275',1,'sp_subscribe_interrupts():&#160;serial_port.c']]],
+  ['sp_5funsubscribe_5finterrupts_5',['sp_unsubscribe_interrupts',['../serial__port_8c.html#a552cfbe43f5bd3b63c79ca505337dd57',1,'sp_unsubscribe_interrupts():&#160;serial_port.c'],['../serial__port_8h.html#a552cfbe43f5bd3b63c79ca505337dd57',1,'sp_unsubscribe_interrupts():&#160;serial_port.c']]],
+  ['switch_5fto_5fgraphic_5fmode_6',['switch_to_graphic_mode',['../graphics_8c.html#a08e061aeff73fc6a1642d9c666ce8e9e',1,'switch_to_graphic_mode(uint16_t submode):&#160;graphics.c'],['../graphics_8h.html#a08e061aeff73fc6a1642d9c666ce8e9e',1,'switch_to_graphic_mode(uint16_t submode):&#160;graphics.c']]]
+];

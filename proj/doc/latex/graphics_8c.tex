@@ -1,0 +1,107 @@
+\doxysection{devices/video/graphics.c File Reference}
+\hypertarget{graphics_8c}{}\label{graphics_8c}\index{devices/video/graphics.c@{devices/video/graphics.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}graphics.\+h\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for graphics.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{graphics_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{graphics_8c_a08e061aeff73fc6a1642d9c666ce8e9e}{switch\+\_\+to\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t submode)
+\begin{DoxyCompactList}\small\item\em sets the video graphics to the graphic mode \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphics_8c_aac76f9080a6fb1e87028669d779a6a4a}{set\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t submode, uint8\+\_\+t \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em sets the frame buffer according to the submode and the needed space \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphics_8c_a950e17209d152e8a40ec064a0b201b25}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, uint8\+\_\+t \texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em draws one pixel in the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{graphics_8c_a950e17209d152e8a40ec064a0b201b25}\label{graphics_8c_a950e17209d152e8a40ec064a0b201b25} 
+\index{graphics.c@{graphics.c}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily int() draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+draws one pixel in the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em color} & color thet the pixel will have \\
+\hline
+{\em frame\+\_\+buffer} & varible that contains the addres to the physical location in memory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+varible that will contain the addres to the physical location in memory ~\newline
+ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8c_a950e17209d152e8a40ec064a0b201b25_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8c_aac76f9080a6fb1e87028669d779a6a4a}\label{graphics_8c_aac76f9080a6fb1e87028669d779a6a4a} 
+\index{graphics.c@{graphics.c}!set\_frame\_buffer@{set\_frame\_buffer}}
+\index{set\_frame\_buffer@{set\_frame\_buffer}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffer()}{set\_frame\_buffer()}}
+{\footnotesize\ttfamily int() set\+\_\+frame\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+sets the frame buffer according to the submode and the needed space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & submode desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8c_aac76f9080a6fb1e87028669d779a6a4a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8c_a08e061aeff73fc6a1642d9c666ce8e9e}\label{graphics_8c_a08e061aeff73fc6a1642d9c666ce8e9e} 
+\index{graphics.c@{graphics.c}!switch\_to\_graphic\_mode@{switch\_to\_graphic\_mode}}
+\index{switch\_to\_graphic\_mode@{switch\_to\_graphic\_mode}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{switch\_to\_graphic\_mode()}{switch\_to\_graphic\_mode()}}
+{\footnotesize\ttfamily int() switch\+\_\+to\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode }\end{DoxyParamCaption})}
+
+
+
+sets the video graphics to the graphic mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em submode} & submode desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system calls 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{graphics_8c_a08e061aeff73fc6a1642d9c666ce8e9e_icgraph}
+\end{center}
+\end{figure}

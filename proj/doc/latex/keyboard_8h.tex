@@ -1,0 +1,103 @@
+\doxysection{devices/keyboard/keyboard.h File Reference}
+\hypertarget{keyboard_8h}{}\label{keyboard_8h}\index{devices/keyboard/keyboard.h@{devices/keyboard/keyboard.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}devices/i8042.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/\+KBC.\+h\"{}}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{keyboard_8h_a4f3036dc383cb3264414c231f2ca11e4}{keyboard\+\_\+subscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em subscribes the keyboard interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a97f07efdc4bf5955236db1b8f111daf6}{keyboard\+\_\+unsubscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes the keyboard interrupts \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{keyboard_8h_aee7480a4c3fc49a7d49a54e8073193f6}{keyboard\+\_\+interrupt\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em keyboard interrupt handler, whenever there´s an interrupt from the keyboard it updates the global variable \"{}scancode\"{} to the the latest received scancode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{keyboard_8h_aee7480a4c3fc49a7d49a54e8073193f6}\label{keyboard_8h_aee7480a4c3fc49a7d49a54e8073193f6} 
+\index{keyboard.h@{keyboard.h}!keyboard\_interrupt\_handler@{keyboard\_interrupt\_handler}}
+\index{keyboard\_interrupt\_handler@{keyboard\_interrupt\_handler}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_interrupt\_handler()}{keyboard\_interrupt\_handler()}}
+{\footnotesize\ttfamily void() keyboard\+\_\+interrupt\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+keyboard interrupt handler, whenever there´s an interrupt from the keyboard it updates the global variable \"{}scancode\"{} to the the latest received scancode 
+
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_aee7480a4c3fc49a7d49a54e8073193f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_aee7480a4c3fc49a7d49a54e8073193f6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{keyboard_8h_a4f3036dc383cb3264414c231f2ca11e4}\label{keyboard_8h_a4f3036dc383cb3264414c231f2ca11e4} 
+\index{keyboard.h@{keyboard.h}!keyboard\_subscribe\_interrupts@{keyboard\_subscribe\_interrupts}}
+\index{keyboard\_subscribe\_interrupts@{keyboard\_subscribe\_interrupts}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_interrupts()}{keyboard\_subscribe\_interrupts()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+subscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+subscribes the keyboard interrupts 
+
+\begin{DoxyReturn}{Returns}
+a 0 in case of success and a 1 in case of error with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{keyboard_8h_a4f3036dc383cb3264414c231f2ca11e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{keyboard_8h_a97f07efdc4bf5955236db1b8f111daf6}\label{keyboard_8h_a97f07efdc4bf5955236db1b8f111daf6} 
+\index{keyboard.h@{keyboard.h}!keyboard\_unsubscribe\_interrupts@{keyboard\_unsubscribe\_interrupts}}
+\index{keyboard\_unsubscribe\_interrupts@{keyboard\_unsubscribe\_interrupts}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_interrupts()}{keyboard\_unsubscribe\_interrupts()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+unsubscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes the keyboard interrupts 
+
+\begin{DoxyReturn}{Returns}
+a 0 in case of success and a 1 in case of error with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{keyboard_8h_a97f07efdc4bf5955236db1b8f111daf6_icgraph}
+\end{center}
+\end{figure}

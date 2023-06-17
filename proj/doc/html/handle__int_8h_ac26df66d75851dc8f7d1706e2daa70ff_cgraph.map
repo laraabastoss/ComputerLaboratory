@@ -1,0 +1,52 @@
+<map id="handle_int_rtc" name="handle_int_rtc">
+<area shape="rect" id="Node000001" title="interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the..." alt="" coords="5,256,108,282"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a8e599478b1e44cfef3a03f91854754a6" title="fills the rtc_structure struct with the fetched information" alt="" coords="156,56,270,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,254,190,92,195,95,70,257"/>
+<area shape="rect" id="Node000006" href="$draw_8c.html#a9b1720e8984c61a5866361e5234bfc8a" title="draws a new frame depending on the current state of the game" alt="" coords="170,431,256,456"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="71,280,192,418,188,421,67,284"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a6f349db8e83e9d8ad23690b86a8a76b3" title="checks if the information is gonna be sent in bcd and, in case it is, convert to binary" alt="" coords="318,56,416,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,66,303,66,303,72,271,72"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#acc27f9c026d296d1955ae73ebe991c12" title="fetches data from the real time counter whenever there´s an interrupt" alt="" coords="487,5,591,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="263,53,318,41,472,21,472,26,318,46,264,58"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="413,53,479,33,480,38,414,58"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="812,69,902,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="592,26,798,68,797,73,591,31"/>
+<area shape="rect" id="Node000007" href="$sprite__management_8c.html#a358dde0e0e62eb0399a63639c27089e6" title="draw a new Sprite" alt="" coords="671,405,755,431"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="221,456,233,486,253,524,282,563,300,579,319,592,344,601,365,601,416,592,520,588,563,579,612,555,641,530,665,501,698,443,703,446,670,504,645,534,615,559,565,584,520,593,417,597,366,606,343,606,317,597,296,583,278,566,249,527,228,488,216,458"/>
+<area shape="rect" id="Node000009" href="$draw_8c.html#a9f1c87c7296779c4c895ca2b13ad2e3e" title="draws the game screen" alt="" coords="341,255,394,280"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="228,429,288,363,347,291,352,294,292,366,232,432"/>
+<area shape="rect" id="Node000016" href="$draw_8c.html#a405142995603cec467b0249b03a06471" title="draw the initial menu" alt="" coords="322,456,412,482"/>
+<area shape="poly" id="edge24_Node000006_Node000016" title=" " alt="" coords="256,448,308,456,307,462,256,453"/>
+<area shape="rect" id="Node000017" href="$draw_8c.html#a0318be4c85415532ce9511034de5a624" title="draws the menu for when the user loses a level" alt="" coords="327,405,408,431"/>
+<area shape="poly" id="edge26_Node000006_Node000017" title=" " alt="" coords="256,434,312,425,312,430,256,439"/>
+<area shape="rect" id="Node000018" href="$draw_8c.html#aff9b68bd23dc760b910e852b5144ee0e" title="draws the menu for when, in the multiplayer mode, the first player is waiting for the second one to c..." alt="" coords="325,507,409,532"/>
+<area shape="poly" id="edge28_Node000006_Node000018" title=" " alt="" coords="242,455,328,497,325,502,240,459"/>
+<area shape="rect" id="Node000019" href="$draw_8c.html#a905d6b578849eb315f945f9a8a551473" title="draws the menu for when the user wins a level" alt="" coords="325,556,409,582"/>
+<area shape="poly" id="edge30_Node000006_Node000019" title=" " alt="" coords="227,455,266,497,320,543,325,546,322,551,316,547,263,501,224,459"/>
+<area shape="rect" id="Node000008" href="$graphics_8c.html#a950e17209d152e8a40ec064a0b201b25" title="draws one pixel in the screen" alt="" coords="816,405,899,431"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="755,416,800,416,800,421,755,421"/>
+<area shape="poly" id="edge15_Node000009_Node000006" title=" " alt="" coords="351,283,292,349,233,420,228,417,288,345,347,279"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="384,279,419,309,466,340,515,362,566,380,658,405,656,410,564,385,513,367,463,345,416,314,381,283"/>
+<area shape="rect" id="Node000010" href="$elements_8c.html#a8e86a8cb37d0d833d0329bda3f6a35e8" title="checks if Fireboy is on top of a plataform, if not he falls" alt="" coords="468,156,610,182"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="381,252,416,222,463,191,474,185,476,190,466,195,420,226,384,256"/>
+<area shape="rect" id="Node000011" href="$elements_8c.html#acc251a731ac1de44a3ed61437d258a90" title="checks if WaterGirl is on top of a plataform, if not she falls" alt="" coords="464,205,614,231"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="393,257,477,233,478,238,395,263"/>
+<area shape="rect" id="Node000012" href="$draw_8c.html#a4eb8933c334d8d88e9ff0b0d1152951c" title="displays the game date (day, month year, hour and minute) according to the data received by the RTC" alt="" coords="492,304,586,330"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="395,272,478,297,477,302,393,278"/>
+<area shape="rect" id="Node000013" href="$serial__port_8c.html#a954bb0921ea9c4741503e6ae0689039f" title="send data to the opposite serial port" alt="" coords="662,95,764,120"/>
+<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="368,254,378,219,395,174,423,128,441,108,463,92,487,81,513,74,566,70,618,76,663,87,662,92,617,81,566,75,514,79,489,86,466,96,445,112,427,131,400,176,383,221,374,255"/>
+<area shape="rect" id="Node000014" href="$elements_8c.html#a9ef498aaf5e098d4193dbe654709193e" title="updates FireBoy to the desired next position, checking if he can go there according to the bit map an..." alt="" coords="487,107,591,132"/>
+<area shape="poly" id="edge18_Node000009_Node000014" title=" " alt="" coords="373,253,407,199,432,168,463,141,472,135,475,140,466,146,436,172,411,202,378,256"/>
+<area shape="rect" id="Node000015" href="$elements_8c.html#a1ff1b97e7a41b1e91851a3d231a6ff60" title="updates WaterGirl to the desired next position, checking if she can go there according to the bit map..." alt="" coords="483,255,595,280"/>
+<area shape="poly" id="edge21_Node000009_Node000015" title=" " alt="" coords="394,265,469,265,469,270,394,270"/>
+<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="576,328,615,347,685,394,682,398,612,351,574,333"/>
+<area shape="poly" id="edge17_Node000013_Node000005" title=" " alt="" coords="764,96,797,90,798,95,765,101"/>
+<area shape="poly" id="edge19_Node000014_Node000007" title=" " alt="" coords="593,127,615,141,640,170,660,202,689,272,705,338,712,390,707,391,700,339,684,273,655,205,636,173,612,146,590,132"/>
+<area shape="poly" id="edge20_Node000014_Node000013" title=" " alt="" coords="591,113,647,109,647,115,591,119"/>
+<area shape="poly" id="edge22_Node000015_Node000007" title=" " alt="" coords="595,279,615,289,642,313,666,340,700,391,696,394,662,343,639,316,612,294,593,283"/>
+<area shape="poly" id="edge23_Node000015_Node000013" title=" " alt="" coords="593,252,612,241,640,217,663,188,697,132,701,135,668,191,643,220,615,246,596,256"/>
+<area shape="poly" id="edge25_Node000016_Node000007" title=" " alt="" coords="413,460,656,424,657,429,413,465"/>
+<area shape="poly" id="edge27_Node000017_Node000007" title=" " alt="" coords="408,416,656,416,656,421,408,421"/>
+<area shape="poly" id="edge29_Node000018_Node000007" title=" " alt="" coords="409,508,503,487,613,456,668,435,669,440,615,461,504,492,410,514"/>
+<area shape="poly" id="edge31_Node000019_Node000007" title=" " alt="" coords="409,561,505,540,560,523,612,500,654,471,688,440,692,444,658,475,615,504,562,528,506,546,410,566"/>
+</map>

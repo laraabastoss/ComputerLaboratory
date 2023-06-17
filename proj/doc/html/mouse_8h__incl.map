@@ -1,0 +1,17 @@
+<map id="devices/mouse/mouse.h" name="devices/mouse/mouse.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="126,5,289,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,153,111,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,33,84,51,66,64,51,80,45,94,44,109,50,138,44,139,38,109,40,92,46,78,62,60,81,46,124,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="168,153,247,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,31,210,138,205,138,205,31"/>
+<area shape="rect" id="Node000004" href="$graphics_8h.html" title=" " alt="" coords="245,79,410,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,29,296,69,293,73,226,34"/>
+<area shape="rect" id="Node000005" href="$i8042_8h.html" title=" " alt="" coords="331,153,444,178"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="289,29,370,48,403,61,424,77,431,94,428,111,411,143,406,140,423,110,425,94,420,81,400,66,368,53,288,34"/>
+<area shape="rect" id="Node000006" href="$_k_b_c_8h.html" title=" " alt="" coords="61,79,170,105"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="193,34,144,72,140,68,190,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="308,108,242,147,239,142,306,103"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="108,107,79,143,75,139,104,103"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="133,103,182,141,179,146,129,107"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="162,103,327,146,326,151,161,108"/>
+</map>

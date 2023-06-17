@@ -1,0 +1,11 @@
+<map id="updateWatergirl" name="updateWatergirl">
+<area shape="rect" id="Node000001" title="updates WaterGirl to the desired next position, checking if she can go there according to the bit map..." alt="" coords="5,31,117,56"/>
+<area shape="rect" id="Node000002" href="$sprite__management_8c.html#a358dde0e0e62eb0399a63639c27089e6" title="draw a new Sprite" alt="" coords="174,5,258,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,32,159,25,160,30,118,37"/>
+<area shape="rect" id="Node000004" href="$serial__port_8c.html#a954bb0921ea9c4741503e6ae0689039f" title="send data to the opposite serial port" alt="" coords="165,55,267,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,50,150,55,149,60,117,55"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a950e17209d152e8a40ec064a0b201b25" title="draws one pixel in the screen" alt="" coords="319,5,402,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,16,303,16,303,21,258,21"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="315,55,405,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="268,65,300,65,300,70,268,70"/>
+</map>

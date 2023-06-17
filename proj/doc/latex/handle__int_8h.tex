@@ -1,0 +1,419 @@
+\doxysection{handle\+\_\+int.\+h File Reference}
+\hypertarget{handle__int_8h}{}\label{handle__int_8h}\index{handle\_int.h@{handle\_int.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}devices/\+KBC.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/mouse/mouse.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/video/graphics.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/rtc/rtc.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/sp/serial\+\_\+port.\+h\"{}}\newline
+{\ttfamily \#include \"{}game/draw.\+h\"{}}\newline
+{\ttfamily \#include \"{}game/elements.\+h\"{}}\newline
+Include dependency graph for handle\+\_\+int.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}~2
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a437ef08681e7210d6678427030446a54}{LEFT}}~1
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_ae888d76ec9e058aa47eeaaa7917a470d}{STOPPED}}~0
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_ab685f8703ae63fb030853d3ac5d25845}{JUMP\+\_\+\+OVER}}~999
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a0a5305431167e4be1f3ea0129375a1e2}{LEVER\+\_\+\+LEFT}}~111
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a31c447a556926ce5751ea75eb97262a9}{LEVER\+\_\+\+RIGHT}}~112
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a571187fa2d9ffcc0e4349889093cc6e7}{WON\+\_\+\+INST}}~113
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a63d729c665b1f8631ac34d8bbd3ebcea}{RESET\+\_\+\+VAR}}~114
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_ac51083fe60a9e9c75821e499470eeab8}{RESET\+\_\+\+VAR\+\_\+\+PLUS\+\_\+\+LEVEL}}~115
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_a71ed6afed1bf7fbfa89ef6b7c3cf6744}{RESET\+\_\+\+VAR\+\_\+\+LEVEL\+\_\+\+ONE}}~116
+\item 
+\#define \mbox{\hyperlink{handle__int_8h_af26e8d7a88e676b61e8215e828a01653}{EXIT\+\_\+\+GAME}}~117
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16f}{Proj\+State}} \{ \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16faf8fe80cd407b467c5505031338be8122}{EXECUTING}}
+, \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16fa7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}}
+ \}
+\item 
+enum \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \{ \newline
+\mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a13d000b4d7dc70d90239b7430d1eb6b2}{START}}
+, \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}}
+, \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317}{LOST}}
+, \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872}{WON}}
+, \newline
+\mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7d5532535d207f54e183254948c72d1e}{MP\+\_\+\+GAME}}
+, \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a06b876bcf37a32fed1dbadf4273827bf}{CONNECTING}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{handle__int_8h_a3805e8c0c25474ab315fa8b95eb5dea0}{handle\+\_\+int\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a timer interrupt, used for the characters jumps and to move the plataform \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_a5587175760c801902df41c23595504e5}{handle\+\_\+int\+\_\+keyboard}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a keyboard interrupt, moving the characters according to the received scancode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_a66ed4cf9cdbf28ab9a0e13173a373ef9}{handle\+\_\+sp\+\_\+data\+\_\+multiplayer}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a serial port interrupt in the multiplayer mode, processing the 8 bit variable received and, accordingly, moving the characters, pushes the lever, finishes or wins the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_a293e68cd22ee8891ead7e26c7ce81653}{handle\+\_\+int\+\_\+keyboard\+\_\+multiplayer\+\_\+transmit}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a keyboard interrupt in the multiplayer mode, moving the characters according to the received scancode if it´s its own character, and sending the scancode to the serial port if it´s the other character \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_ad9a0ce174cc6729af07e0dd89bc924bc}{handle\+\_\+int\+\_\+mouse\+\_\+click}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a mouse interrupt and the right button is clicked, used for clicking the buttons and pushing the lever \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_ac26df66d75851dc8f7d1706e2daa70ff}{handle\+\_\+int\+\_\+rtc}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_ae113fc9cbcb554d0656c9f376bab6632}{handle\+\_\+int\+\_\+sp}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a serial port interrupt, checking wahtºs the current state of the serial port \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8h_a8647c0cda9304b2e6afcef279a69ba42}{reset\+Variables}} ()
+\begin{DoxyCompactList}\small\item\em resets all the variables used for the characters and the obstacules movements everytime a level is won or lost \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{handle__int_8h_af26e8d7a88e676b61e8215e828a01653}\label{handle__int_8h_af26e8d7a88e676b61e8215e828a01653} 
+\index{handle\_int.h@{handle\_int.h}!EXIT\_GAME@{EXIT\_GAME}}
+\index{EXIT\_GAME@{EXIT\_GAME}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{EXIT\_GAME}{EXIT\_GAME}}
+{\footnotesize\ttfamily \#define EXIT\+\_\+\+GAME~117}
+
+\Hypertarget{handle__int_8h_ab685f8703ae63fb030853d3ac5d25845}\label{handle__int_8h_ab685f8703ae63fb030853d3ac5d25845} 
+\index{handle\_int.h@{handle\_int.h}!JUMP\_OVER@{JUMP\_OVER}}
+\index{JUMP\_OVER@{JUMP\_OVER}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{JUMP\_OVER}{JUMP\_OVER}}
+{\footnotesize\ttfamily \#define JUMP\+\_\+\+OVER~999}
+
+\Hypertarget{handle__int_8h_a437ef08681e7210d6678427030446a54}\label{handle__int_8h_a437ef08681e7210d6678427030446a54} 
+\index{handle\_int.h@{handle\_int.h}!LEFT@{LEFT}}
+\index{LEFT@{LEFT}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{LEFT}{LEFT}}
+{\footnotesize\ttfamily \#define LEFT~1}
+
+\Hypertarget{handle__int_8h_a0a5305431167e4be1f3ea0129375a1e2}\label{handle__int_8h_a0a5305431167e4be1f3ea0129375a1e2} 
+\index{handle\_int.h@{handle\_int.h}!LEVER\_LEFT@{LEVER\_LEFT}}
+\index{LEVER\_LEFT@{LEVER\_LEFT}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{LEVER\_LEFT}{LEVER\_LEFT}}
+{\footnotesize\ttfamily \#define LEVER\+\_\+\+LEFT~111}
+
+\Hypertarget{handle__int_8h_a31c447a556926ce5751ea75eb97262a9}\label{handle__int_8h_a31c447a556926ce5751ea75eb97262a9} 
+\index{handle\_int.h@{handle\_int.h}!LEVER\_RIGHT@{LEVER\_RIGHT}}
+\index{LEVER\_RIGHT@{LEVER\_RIGHT}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{LEVER\_RIGHT}{LEVER\_RIGHT}}
+{\footnotesize\ttfamily \#define LEVER\+\_\+\+RIGHT~112}
+
+\Hypertarget{handle__int_8h_a63d729c665b1f8631ac34d8bbd3ebcea}\label{handle__int_8h_a63d729c665b1f8631ac34d8bbd3ebcea} 
+\index{handle\_int.h@{handle\_int.h}!RESET\_VAR@{RESET\_VAR}}
+\index{RESET\_VAR@{RESET\_VAR}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{RESET\_VAR}{RESET\_VAR}}
+{\footnotesize\ttfamily \#define RESET\+\_\+\+VAR~114}
+
+\Hypertarget{handle__int_8h_a71ed6afed1bf7fbfa89ef6b7c3cf6744}\label{handle__int_8h_a71ed6afed1bf7fbfa89ef6b7c3cf6744} 
+\index{handle\_int.h@{handle\_int.h}!RESET\_VAR\_LEVEL\_ONE@{RESET\_VAR\_LEVEL\_ONE}}
+\index{RESET\_VAR\_LEVEL\_ONE@{RESET\_VAR\_LEVEL\_ONE}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{RESET\_VAR\_LEVEL\_ONE}{RESET\_VAR\_LEVEL\_ONE}}
+{\footnotesize\ttfamily \#define RESET\+\_\+\+VAR\+\_\+\+LEVEL\+\_\+\+ONE~116}
+
+\Hypertarget{handle__int_8h_ac51083fe60a9e9c75821e499470eeab8}\label{handle__int_8h_ac51083fe60a9e9c75821e499470eeab8} 
+\index{handle\_int.h@{handle\_int.h}!RESET\_VAR\_PLUS\_LEVEL@{RESET\_VAR\_PLUS\_LEVEL}}
+\index{RESET\_VAR\_PLUS\_LEVEL@{RESET\_VAR\_PLUS\_LEVEL}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{RESET\_VAR\_PLUS\_LEVEL}{RESET\_VAR\_PLUS\_LEVEL}}
+{\footnotesize\ttfamily \#define RESET\+\_\+\+VAR\+\_\+\+PLUS\+\_\+\+LEVEL~115}
+
+\Hypertarget{handle__int_8h_a80fb826a684cf3f0d306b22aa100ddac}\label{handle__int_8h_a80fb826a684cf3f0d306b22aa100ddac} 
+\index{handle\_int.h@{handle\_int.h}!RIGHT@{RIGHT}}
+\index{RIGHT@{RIGHT}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT}{RIGHT}}
+{\footnotesize\ttfamily \#define RIGHT~2}
+
+\Hypertarget{handle__int_8h_ae888d76ec9e058aa47eeaaa7917a470d}\label{handle__int_8h_ae888d76ec9e058aa47eeaaa7917a470d} 
+\index{handle\_int.h@{handle\_int.h}!STOPPED@{STOPPED}}
+\index{STOPPED@{STOPPED}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{STOPPED}{STOPPED}}
+{\footnotesize\ttfamily \#define STOPPED~0}
+
+\Hypertarget{handle__int_8h_a571187fa2d9ffcc0e4349889093cc6e7}\label{handle__int_8h_a571187fa2d9ffcc0e4349889093cc6e7} 
+\index{handle\_int.h@{handle\_int.h}!WON\_INST@{WON\_INST}}
+\index{WON\_INST@{WON\_INST}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{WON\_INST}{WON\_INST}}
+{\footnotesize\ttfamily \#define WON\+\_\+\+INST~113}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+\index{handle\_int.h@{handle\_int.h}!GameState@{GameState}}
+\index{GameState@{GameState}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{GameState}{GameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{START@{START}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!START@{START}}}\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a13d000b4d7dc70d90239b7430d1eb6b2}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a13d000b4d7dc70d90239b7430d1eb6b2} 
+START&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!GAME@{GAME}}}\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84} 
+GAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOST@{LOST}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!LOST@{LOST}}}\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317} 
+LOST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WON@{WON}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!WON@{WON}}}\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872} 
+WON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MP\_GAME@{MP\_GAME}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!MP\_GAME@{MP\_GAME}}}\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7d5532535d207f54e183254948c72d1e}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7d5532535d207f54e183254948c72d1e} 
+MP\+\_\+\+GAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONNECTING@{CONNECTING}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!CONNECTING@{CONNECTING}}}\Hypertarget{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a06b876bcf37a32fed1dbadf4273827bf}\label{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a06b876bcf37a32fed1dbadf4273827bf} 
+CONNECTING&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{handle__int_8h_a699844254d35e2aed02ce41ea729a16f}\label{handle__int_8h_a699844254d35e2aed02ce41ea729a16f} 
+\index{handle\_int.h@{handle\_int.h}!ProjState@{ProjState}}
+\index{ProjState@{ProjState}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{ProjState}{ProjState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16f}{Proj\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXECUTING@{EXECUTING}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!EXECUTING@{EXECUTING}}}\Hypertarget{handle__int_8h_a699844254d35e2aed02ce41ea729a16faf8fe80cd407b467c5505031338be8122}\label{handle__int_8h_a699844254d35e2aed02ce41ea729a16faf8fe80cd407b467c5505031338be8122} 
+EXECUTING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT@{EXIT}!handle\_int.h@{handle\_int.h}}\index{handle\_int.h@{handle\_int.h}!EXIT@{EXIT}}}\Hypertarget{handle__int_8h_a699844254d35e2aed02ce41ea729a16fa7a10b5d68d31711288e1fe0fa17dbf4f}\label{handle__int_8h_a699844254d35e2aed02ce41ea729a16fa7a10b5d68d31711288e1fe0fa17dbf4f} 
+EXIT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{handle__int_8h_a5587175760c801902df41c23595504e5}\label{handle__int_8h_a5587175760c801902df41c23595504e5} 
+\index{handle\_int.h@{handle\_int.h}!handle\_int\_keyboard@{handle\_int\_keyboard}}
+\index{handle\_int\_keyboard@{handle\_int\_keyboard}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_keyboard()}{handle\_int\_keyboard()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a keyboard interrupt, moving the characters according to the received scancode 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a5587175760c801902df41c23595504e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a5587175760c801902df41c23595504e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_a293e68cd22ee8891ead7e26c7ce81653}\label{handle__int_8h_a293e68cd22ee8891ead7e26c7ce81653} 
+\index{handle\_int.h@{handle\_int.h}!handle\_int\_keyboard\_multiplayer\_transmit@{handle\_int\_keyboard\_multiplayer\_transmit}}
+\index{handle\_int\_keyboard\_multiplayer\_transmit@{handle\_int\_keyboard\_multiplayer\_transmit}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_keyboard\_multiplayer\_transmit()}{handle\_int\_keyboard\_multiplayer\_transmit()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+keyboard\+\_\+multiplayer\+\_\+transmit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a keyboard interrupt in the multiplayer mode, moving the characters according to the received scancode if it´s its own character, and sending the scancode to the serial port if it´s the other character 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a293e68cd22ee8891ead7e26c7ce81653_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a293e68cd22ee8891ead7e26c7ce81653_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_ad9a0ce174cc6729af07e0dd89bc924bc}\label{handle__int_8h_ad9a0ce174cc6729af07e0dd89bc924bc} 
+\index{handle\_int.h@{handle\_int.h}!handle\_int\_mouse\_click@{handle\_int\_mouse\_click}}
+\index{handle\_int\_mouse\_click@{handle\_int\_mouse\_click}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_mouse\_click()}{handle\_int\_mouse\_click()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+mouse\+\_\+click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a mouse interrupt and the right button is clicked, used for clicking the buttons and pushing the lever 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_ad9a0ce174cc6729af07e0dd89bc924bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_ad9a0ce174cc6729af07e0dd89bc924bc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_ac26df66d75851dc8f7d1706e2daa70ff}\label{handle__int_8h_ac26df66d75851dc8f7d1706e2daa70ff} 
+\index{handle\_int.h@{handle\_int.h}!handle\_int\_rtc@{handle\_int\_rtc}}
+\index{handle\_int\_rtc@{handle\_int\_rtc}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_rtc()}{handle\_int\_rtc()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+rtc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the screen 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_ac26df66d75851dc8f7d1706e2daa70ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_ac26df66d75851dc8f7d1706e2daa70ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_ae113fc9cbcb554d0656c9f376bab6632}\label{handle__int_8h_ae113fc9cbcb554d0656c9f376bab6632} 
+\index{handle\_int.h@{handle\_int.h}!handle\_int\_sp@{handle\_int\_sp}}
+\index{handle\_int\_sp@{handle\_int\_sp}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_sp()}{handle\_int\_sp()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+sp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a serial port interrupt, checking wahtºs the current state of the serial port 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_ae113fc9cbcb554d0656c9f376bab6632_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_ae113fc9cbcb554d0656c9f376bab6632_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_a3805e8c0c25474ab315fa8b95eb5dea0}\label{handle__int_8h_a3805e8c0c25474ab315fa8b95eb5dea0} 
+\index{handle\_int.h@{handle\_int.h}!handle\_int\_timer@{handle\_int\_timer}}
+\index{handle\_int\_timer@{handle\_int\_timer}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_timer()}{handle\_int\_timer()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a timer interrupt, used for the characters jumps and to move the plataform 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a3805e8c0c25474ab315fa8b95eb5dea0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a3805e8c0c25474ab315fa8b95eb5dea0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_a66ed4cf9cdbf28ab9a0e13173a373ef9}\label{handle__int_8h_a66ed4cf9cdbf28ab9a0e13173a373ef9} 
+\index{handle\_int.h@{handle\_int.h}!handle\_sp\_data\_multiplayer@{handle\_sp\_data\_multiplayer}}
+\index{handle\_sp\_data\_multiplayer@{handle\_sp\_data\_multiplayer}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{handle\_sp\_data\_multiplayer()}{handle\_sp\_data\_multiplayer()}}
+{\footnotesize\ttfamily void handle\+\_\+sp\+\_\+data\+\_\+multiplayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a serial port interrupt in the multiplayer mode, processing the 8 bit variable received and, accordingly, moving the characters, pushes the lever, finishes or wins the level 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a66ed4cf9cdbf28ab9a0e13173a373ef9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a66ed4cf9cdbf28ab9a0e13173a373ef9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8h_a8647c0cda9304b2e6afcef279a69ba42}\label{handle__int_8h_a8647c0cda9304b2e6afcef279a69ba42} 
+\index{handle\_int.h@{handle\_int.h}!resetVariables@{resetVariables}}
+\index{resetVariables@{resetVariables}!handle\_int.h@{handle\_int.h}}
+\doxysubsubsection{\texorpdfstring{resetVariables()}{resetVariables()}}
+{\footnotesize\ttfamily void reset\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets all the variables used for the characters and the obstacules movements everytime a level is won or lost 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{handle__int_8h_a8647c0cda9304b2e6afcef279a69ba42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8h_a8647c0cda9304b2e6afcef279a69ba42_icgraph}
+\end{center}
+\end{figure}

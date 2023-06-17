@@ -1,0 +1,27 @@
+\doxysection{serial\+\_\+port.\+h}
+\hypertarget{serial__port_8h_source}{}\label{serial__port_8h_source}\index{devices/sp/serial\_port.h@{devices/sp/serial\_port.h}}
+\mbox{\hyperlink{serial__port_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_SP\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_SP\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <minix/sysutil.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ SP\_CLEAR\ \ \ \ \ \ \ \ 255}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SP\_FIRST\_INT\ \ \ \ 254}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ SER\_IRQ\ \ \ \ \ \ \ \ \ 4\ \ }}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ int\ (\mbox{\hyperlink{serial__port_8h_a954bb0921ea9c4741503e6ae0689039f}{sp\_send\_data}})(uint8\_t\ data);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00019\ int\ (\mbox{\hyperlink{serial__port_8h_a8e55a1f2b327253d3b3afee07acb1109}{sp\_process\_data}})();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00023\ int\ (\mbox{\hyperlink{serial__port_8h_af6a48302ff00de7da3133360c0212275}{sp\_subscribe\_interrupts}})();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00027\ int\ (\mbox{\hyperlink{serial__port_8h_a552cfbe43f5bd3b63c79ca505337dd57}{sp\_unsubscribe\_interrupts}})();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+
+\end{DoxyCode}

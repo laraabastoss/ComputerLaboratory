@@ -1,0 +1,5 @@
+<map id="sp_send_data" name="sp_send_data">
+<area shape="rect" id="Node000001" title="send data to the opposite serial port" alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="156,5,246,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,16,141,16,141,21,108,21"/>
+</map>

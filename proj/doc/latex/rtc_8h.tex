@@ -1,0 +1,189 @@
+\doxysection{devices/rtc/rtc.h File Reference}
+\hypertarget{rtc_8h}{}\label{rtc_8h}\index{devices/rtc/rtc.h@{devices/rtc/rtc.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for rtc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_t_c__structure}{RTC\+\_\+structure}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}{IRQ\+\_\+\+RTC}}~8
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{rtc_8h_abb90a7b2307300874b2529d94aafacca}{rtc\+\_\+subscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em subscribes the real time counter interrupts \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8h_ae0e5cb47db8832528abb7dc48255cd3a}{rtc\+\_\+unsubscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes the real time counter interrupts \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8h_acc27f9c026d296d1955ae73ebe991c12}{get\+\_\+rtc\+\_\+output}} (uint8\+\_\+t info\+Byte, uint8\+\_\+t \texorpdfstring{$\ast$}{*}answer)
+\begin{DoxyCompactList}\small\item\em fetches data from the real time counter whenever there´s an interrupt \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8h_a8e599478b1e44cfef3a03f91854754a6}{fill\+\_\+rtc\+\_\+structure}} ()
+\begin{DoxyCompactList}\small\item\em fills the rtc\+\_\+structure struct with the fetched information \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8h_a6f349db8e83e9d8ad23690b86a8a76b3}{check\+\_\+binary}} (int bit)
+\begin{DoxyCompactList}\small\item\em checks if the information is gonna be sent in bcd and, in case it is, convert to binary \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}\label{rtc_8h_a910ac5f2c1b4016e433f9832358a1816} 
+\index{rtc.h@{rtc.h}!IRQ\_RTC@{IRQ\_RTC}}
+\index{IRQ\_RTC@{IRQ\_RTC}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{IRQ\_RTC}{IRQ\_RTC}}
+{\footnotesize\ttfamily \#define IRQ\+\_\+\+RTC~8}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rtc_8h_a6f349db8e83e9d8ad23690b86a8a76b3}\label{rtc_8h_a6f349db8e83e9d8ad23690b86a8a76b3} 
+\index{rtc.h@{rtc.h}!check\_binary@{check\_binary}}
+\index{check\_binary@{check\_binary}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{check\_binary()}{check\_binary()}}
+{\footnotesize\ttfamily uint8\+\_\+t check\+\_\+binary (\begin{DoxyParamCaption}\item[{int}]{bit }\end{DoxyParamCaption})}
+
+
+
+checks if the information is gonna be sent in bcd and, in case it is, convert to binary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit} & what informtaion we want \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the result 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a6f349db8e83e9d8ad23690b86a8a76b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a6f349db8e83e9d8ad23690b86a8a76b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8h_a8e599478b1e44cfef3a03f91854754a6}\label{rtc_8h_a8e599478b1e44cfef3a03f91854754a6} 
+\index{rtc.h@{rtc.h}!fill\_rtc\_structure@{fill\_rtc\_structure}}
+\index{fill\_rtc\_structure@{fill\_rtc\_structure}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{fill\_rtc\_structure()}{fill\_rtc\_structure()}}
+{\footnotesize\ttfamily int fill\+\_\+rtc\+\_\+structure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fills the rtc\+\_\+structure struct with the fetched information 
+
+\begin{DoxyReturn}{Returns}
+a 0 in case of success and a 1 in case of error with the system call 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a8e599478b1e44cfef3a03f91854754a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a8e599478b1e44cfef3a03f91854754a6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8h_acc27f9c026d296d1955ae73ebe991c12}\label{rtc_8h_acc27f9c026d296d1955ae73ebe991c12} 
+\index{rtc.h@{rtc.h}!get\_rtc\_output@{get\_rtc\_output}}
+\index{get\_rtc\_output@{get\_rtc\_output}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{get\_rtc\_output()}{get\_rtc\_output()}}
+{\footnotesize\ttfamily int get\+\_\+rtc\+\_\+output (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{info\+Byte,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{answer }\end{DoxyParamCaption})}
+
+
+
+fetches data from the real time counter whenever there´s an interrupt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info\+Byte} & byte that indicates what informtaion we want \\
+\hline
+{\em output} & received answer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a 0 in case of success and a 1 in case of error with the system call 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{rtc_8h_acc27f9c026d296d1955ae73ebe991c12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_acc27f9c026d296d1955ae73ebe991c12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8h_abb90a7b2307300874b2529d94aafacca}\label{rtc_8h_abb90a7b2307300874b2529d94aafacca} 
+\index{rtc.h@{rtc.h}!rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}}
+\index{rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_interrupts()}{rtc\_subscribe\_interrupts()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+subscribes the real time counter interrupts 
+
+\begin{DoxyReturn}{Returns}
+a 0 in case of success and a 1 in case of error with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{rtc_8h_abb90a7b2307300874b2529d94aafacca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8h_ae0e5cb47db8832528abb7dc48255cd3a}\label{rtc_8h_ae0e5cb47db8832528abb7dc48255cd3a} 
+\index{rtc.h@{rtc.h}!rtc\_unsubscribe\_interrupts@{rtc\_unsubscribe\_interrupts}}
+\index{rtc\_unsubscribe\_interrupts@{rtc\_unsubscribe\_interrupts}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_interrupts()}{rtc\_unsubscribe\_interrupts()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes the real time counter interrupts 
+
+\begin{DoxyReturn}{Returns}
+a 0 in case of success and a 1 in case of error with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{rtc_8h_ae0e5cb47db8832528abb7dc48255cd3a_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,5 @@
+<map id="set_frame_buffers" name="set_frame_buffers">
+<area shape="rect" id="Node000001" title="sets the frame buffers" alt="" coords="5,5,132,31"/>
+<area shape="rect" id="Node000002" href="$graphics_8c.html#aac76f9080a6fb1e87028669d779a6a4a" title="sets the frame buffer according to the submode and the needed space" alt="" coords="180,5,299,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,16,165,16,165,21,132,21"/>
+</map>

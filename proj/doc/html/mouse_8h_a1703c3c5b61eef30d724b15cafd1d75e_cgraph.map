@@ -1,0 +1,10 @@
+<map id="mouse_write" name="mouse_write">
+<area shape="rect" id="Node000001" title="writes commands directly to the KBC" alt="" coords="5,5,101,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="517,5,608,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,16,502,16,502,21,101,21"/>
+<area shape="rect" id="Node000003" href="$_k_b_c_8c.html#a34b653b3939fffe883c903cdadb36d3a" title=" " alt="" coords="149,31,297,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,23,134,28,133,33,100,28"/>
+<area shape="rect" id="Node000004" href="$_k_b_c_8c.html#ac024af91b156e4fc61ee3886b891de21" title=" " alt="" coords="345,31,469,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="298,41,330,41,330,46,298,46"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="469,31,502,25,503,31,470,36"/>
+</map>

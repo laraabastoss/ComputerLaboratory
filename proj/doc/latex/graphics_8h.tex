@@ -1,0 +1,141 @@
+\doxysection{devices/video/graphics.h File Reference}
+\hypertarget{graphics_8h}{}\label{graphics_8h}\index{devices/video/graphics.h@{devices/video/graphics.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for graphics.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{graphics_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{graphics_8h_a66653ee4d333c6e625b19ecdee6cb9ac}{TRANSPARENT\+\_\+\+COLOR}}~0x123123
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{graphics_8h_a08e061aeff73fc6a1642d9c666ce8e9e}{switch\+\_\+to\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t submode)
+\begin{DoxyCompactList}\small\item\em sets the video graphics to the graphic mode \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphics_8h_aac76f9080a6fb1e87028669d779a6a4a}{set\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t submode, uint8\+\_\+t \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em sets the frame buffer according to the submode and the needed space \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphics_8h_a950e17209d152e8a40ec064a0b201b25}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, uint8\+\_\+t \texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em draws one pixel in the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{graphics_8h_a3f79b04e621cae90f2c5ad2786ee153f}{vbe\+\_\+info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{graphics_8h_a66653ee4d333c6e625b19ecdee6cb9ac}\label{graphics_8h_a66653ee4d333c6e625b19ecdee6cb9ac} 
+\index{graphics.h@{graphics.h}!TRANSPARENT\_COLOR@{TRANSPARENT\_COLOR}}
+\index{TRANSPARENT\_COLOR@{TRANSPARENT\_COLOR}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{TRANSPARENT\_COLOR}{TRANSPARENT\_COLOR}}
+{\footnotesize\ttfamily \#define TRANSPARENT\+\_\+\+COLOR~0x123123}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{graphics_8h_a950e17209d152e8a40ec064a0b201b25}\label{graphics_8h_a950e17209d152e8a40ec064a0b201b25} 
+\index{graphics.h@{graphics.h}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily int() draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+draws one pixel in the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em color} & color thet the pixel will have \\
+\hline
+{\em frame\+\_\+buffer} & varible that contains the addres to the physical location in memory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+varible that will contain the addres to the physical location in memory ~\newline
+ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_a950e17209d152e8a40ec064a0b201b25_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_aac76f9080a6fb1e87028669d779a6a4a}\label{graphics_8h_aac76f9080a6fb1e87028669d779a6a4a} 
+\index{graphics.h@{graphics.h}!set\_frame\_buffer@{set\_frame\_buffer}}
+\index{set\_frame\_buffer@{set\_frame\_buffer}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffer()}{set\_frame\_buffer()}}
+{\footnotesize\ttfamily int() set\+\_\+frame\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+sets the frame buffer according to the submode and the needed space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & submode desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_aac76f9080a6fb1e87028669d779a6a4a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_a08e061aeff73fc6a1642d9c666ce8e9e}\label{graphics_8h_a08e061aeff73fc6a1642d9c666ce8e9e} 
+\index{graphics.h@{graphics.h}!switch\_to\_graphic\_mode@{switch\_to\_graphic\_mode}}
+\index{switch\_to\_graphic\_mode@{switch\_to\_graphic\_mode}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{switch\_to\_graphic\_mode()}{switch\_to\_graphic\_mode()}}
+{\footnotesize\ttfamily int() switch\+\_\+to\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode }\end{DoxyParamCaption})}
+
+
+
+sets the video graphics to the graphic mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em submode} & submode desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system calls 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{graphics_8h_a08e061aeff73fc6a1642d9c666ce8e9e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{graphics_8h_a3f79b04e621cae90f2c5ad2786ee153f}\label{graphics_8h_a3f79b04e621cae90f2c5ad2786ee153f} 
+\index{graphics.h@{graphics.h}!vbe\_info@{vbe\_info}}
+\index{vbe\_info@{vbe\_info}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{vbe\_info}{vbe\_info}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vbe\+\_\+info}
+

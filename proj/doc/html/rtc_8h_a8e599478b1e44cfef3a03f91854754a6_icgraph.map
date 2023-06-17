@@ -1,0 +1,10 @@
+<map id="fill_rtc_structure" name="fill_rtc_structure">
+<area shape="rect" id="Node000001" title="fills the rtc_structure struct with the fetched information" alt="" coords="444,31,559,56"/>
+<area shape="rect" id="Node000002" href="$handle__int_8c.html#ac26df66d75851dc8f7d1706e2daa70ff" title="interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the..." alt="" coords="294,5,396,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,34,396,29,397,24,430,29"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,114,56"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="429,46,114,46,114,41,429,41"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a46fea93bf5d63e93090fbb95b742b881" title=" " alt="" coords="162,5,246,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="279,21,246,21,246,16,279,16"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="147,31,115,37,114,31,146,25"/>
+</map>

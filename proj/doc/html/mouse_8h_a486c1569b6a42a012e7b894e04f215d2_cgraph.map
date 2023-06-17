@@ -1,0 +1,8 @@
+<map id="deactivate_mouse" name="deactivate_mouse">
+<area shape="rect" id="Node000001" title="descativates the mouse" alt="" coords="5,5,133,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="377,5,467,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,16,362,16,362,21,133,21"/>
+<area shape="rect" id="Node000003" href="$_k_b_c_8c.html#a4ff65c3d42fc518a680dc2b7c98d0102" title="writes a command to the KBC" alt="" coords="181,31,329,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,24,167,29,166,34,132,29"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="329,30,362,25,363,30,330,35"/>
+</map>

@@ -1,0 +1,35 @@
+<map id="sprites/sprite.h" name="sprites/sprite.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,5,338,31"/>
+<area shape="rect" id="Node000002" href="$draw_8h.html" title=" " alt="" coords="322,153,416,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,42,328,78,366,151,361,154,324,80,300,45"/>
+<area shape="rect" id="Node000005" href="$elements_8h.html" title=" " alt="" coords="77,300,199,326"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="217,30,162,47,136,62,115,81,99,107,91,136,91,167,95,199,114,257,134,298,129,301,109,259,90,200,85,167,86,135,94,104,111,77,133,57,160,42,215,25"/>
+<area shape="rect" id="Node000011" href="$sprite_8c.html" title=" " alt="" coords="388,79,496,105"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="326,35,416,76,414,81,323,40"/>
+<area shape="rect" id="Node000012" href="$sprite__management_8h.html" title=" " alt="" coords="125,79,314,105"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="266,44,232,80,228,77,262,40"/>
+<area shape="rect" id="Node000003" href="$draw_8c.html" title=" " alt="" coords="322,226,416,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,193,371,226,366,226,366,193"/>
+<area shape="rect" id="Node000004" href="$handle__int_8h.html" title=" " alt="" coords="206,226,297,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,188,266,228,263,223,328,184"/>
+<area shape="rect" id="Node000009" href="$main_8c.html" title=" " alt="" coords="357,447,418,473"/>
+<area shape="poly" id="edge15_Node000002_Node000009" title=" " alt="" coords="399,186,417,204,430,225,434,232,440,236,445,240,448,249,444,293,418,400,408,426,397,448,392,446,403,424,413,399,439,293,443,250,441,243,436,240,431,236,425,228,412,207,396,190"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="290,216,354,177,357,181,292,221"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="214,262,151,302,149,297,211,257"/>
+<area shape="rect" id="Node000007" href="$game_8h.html" title=" " alt="" coords="203,374,303,399"/>
+<area shape="poly" id="edge12_Node000004_Node000007" title=" " alt="" coords="254,267,255,373,250,373,249,267"/>
+<area shape="poly" id="edge14_Node000004_Node000009" title=" " alt="" coords="312,252,349,270,365,283,379,298,389,317,396,338,400,380,398,419,393,447,388,446,393,418,395,380,390,339,384,319,374,302,362,287,346,274,310,257"/>
+<area shape="rect" id="Node000010" href="$handle__int_8c.html" title=" " alt="" coords="274,300,365,326"/>
+<area shape="poly" id="edge13_Node000004_Node000010" title=" " alt="" coords="274,261,310,298,306,301,271,264"/>
+<area shape="poly" id="edge10_Node000005_Node000004" title=" " alt="" coords="175,290,238,250,240,255,178,295"/>
+<area shape="rect" id="Node000006" href="$elements_8c.html" title=" " alt="" coords="5,374,127,399"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="118,338,80,375,76,371,114,334"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="171,332,235,371,232,375,168,336"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="150,338,166,369,192,397,221,412,266,427,357,450,356,455,264,432,219,417,188,401,162,372,145,340"/>
+<area shape="rect" id="Node000008" href="$game_8c.html" title=" " alt="" coords="203,447,303,473"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="255,414,255,447,250,447,250,414"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="290,404,366,444,363,449,287,409"/>
+<area shape="poly" id="edge19_Node000012_Node000002" title=" " alt="" coords="259,109,344,150,342,154,257,114"/>
+<area shape="rect" id="Node000013" href="$sprite__management_8c.html" title=" " alt="" coords="109,153,298,178"/>
+<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="216,120,209,153,203,152,211,118"/>
+</map>

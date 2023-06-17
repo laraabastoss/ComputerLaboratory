@@ -1,0 +1,157 @@
+\doxysection{devices/sp/serial\+\_\+port.c File Reference}
+\hypertarget{serial__port_8c}{}\label{serial__port_8c}\index{devices/sp/serial\_port.c@{devices/sp/serial\_port.c}}
+{\ttfamily \#include \"{}serial\+\_\+port.\+h\"{}}\newline
+Include dependency graph for serial\+\_\+port.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{serial__port_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{serial__port_8c_a954bb0921ea9c4741503e6ae0689039f}{sp\+\_\+send\+\_\+data}} (uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em send data to the opposite serial port \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{serial__port_8c_a8e55a1f2b327253d3b3afee07acb1109}{sp\+\_\+process\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em receives data from the opposite serial port \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{serial__port_8c_af6a48302ff00de7da3133360c0212275}{sp\+\_\+subscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em subscribes the serial port interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{serial__port_8c_a552cfbe43f5bd3b63c79ca505337dd57}{sp\+\_\+unsubscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em subscribes the serial port interrupts \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{serial__port_8c_a279e4c9a05cd63c43dd4c18c80c27483}{sp\+\_\+hook\+\_\+id}} = 7
+\item 
+uint8\+\_\+t \mbox{\hyperlink{serial__port_8c_a8e9b0ada4a0dacf939bdac2d2c6b9948}{sp\+\_\+data}} = 0
+\item 
+int \mbox{\hyperlink{serial__port_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}{player}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{serial__port_8c_a8e55a1f2b327253d3b3afee07acb1109}\label{serial__port_8c_a8e55a1f2b327253d3b3afee07acb1109} 
+\index{serial\_port.c@{serial\_port.c}!sp\_process\_data@{sp\_process\_data}}
+\index{sp\_process\_data@{sp\_process\_data}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{sp\_process\_data()}{sp\_process\_data()}}
+{\footnotesize\ttfamily int() sp\+\_\+process\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+receives data from the opposite serial port 
+
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system call 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{serial__port_8c_a8e55a1f2b327253d3b3afee07acb1109_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__port_8c_a8e55a1f2b327253d3b3afee07acb1109_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__port_8c_a954bb0921ea9c4741503e6ae0689039f}\label{serial__port_8c_a954bb0921ea9c4741503e6ae0689039f} 
+\index{serial\_port.c@{serial\_port.c}!sp\_send\_data@{sp\_send\_data}}
+\index{sp\_send\_data@{sp\_send\_data}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{sp\_send\_data()}{sp\_send\_data()}}
+{\footnotesize\ttfamily int() sp\+\_\+send\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+send data to the opposite serial port 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & data sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system call 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{serial__port_8c_a954bb0921ea9c4741503e6ae0689039f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__port_8c_a954bb0921ea9c4741503e6ae0689039f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__port_8c_af6a48302ff00de7da3133360c0212275}\label{serial__port_8c_af6a48302ff00de7da3133360c0212275} 
+\index{serial\_port.c@{serial\_port.c}!sp\_subscribe\_interrupts@{sp\_subscribe\_interrupts}}
+\index{sp\_subscribe\_interrupts@{sp\_subscribe\_interrupts}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{sp\_subscribe\_interrupts()}{sp\_subscribe\_interrupts()}}
+{\footnotesize\ttfamily int() sp\+\_\+subscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+subscribes the serial port interrupts 
+
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{serial__port_8c_af6a48302ff00de7da3133360c0212275_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__port_8c_a552cfbe43f5bd3b63c79ca505337dd57}\label{serial__port_8c_a552cfbe43f5bd3b63c79ca505337dd57} 
+\index{serial\_port.c@{serial\_port.c}!sp\_unsubscribe\_interrupts@{sp\_unsubscribe\_interrupts}}
+\index{sp\_unsubscribe\_interrupts@{sp\_unsubscribe\_interrupts}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{sp\_unsubscribe\_interrupts()}{sp\_unsubscribe\_interrupts()}}
+{\footnotesize\ttfamily int() sp\+\_\+unsubscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+subscribes the serial port interrupts 
+
+\begin{DoxyReturn}{Returns}
+1 in case of success, and 0 if there´s any problem with the system call 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{serial__port_8c_a552cfbe43f5bd3b63c79ca505337dd57_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{serial__port_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}\label{serial__port_8c_ae78f447e0fc84c538b91b0cc8c8a34fa} 
+\index{serial\_port.c@{serial\_port.c}!player@{player}}
+\index{player@{player}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily int player\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__port_8c_a8e9b0ada4a0dacf939bdac2d2c6b9948}\label{serial__port_8c_a8e9b0ada4a0dacf939bdac2d2c6b9948} 
+\index{serial\_port.c@{serial\_port.c}!sp\_data@{sp\_data}}
+\index{sp\_data@{sp\_data}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{sp\_data}{sp\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t sp\+\_\+data = 0}
+
+\Hypertarget{serial__port_8c_a279e4c9a05cd63c43dd4c18c80c27483}\label{serial__port_8c_a279e4c9a05cd63c43dd4c18c80c27483} 
+\index{serial\_port.c@{serial\_port.c}!sp\_hook\_id@{sp\_hook\_id}}
+\index{sp\_hook\_id@{sp\_hook\_id}!serial\_port.c@{serial\_port.c}}
+\doxysubsubsection{\texorpdfstring{sp\_hook\_id}{sp\_hook\_id}}
+{\footnotesize\ttfamily int sp\+\_\+hook\+\_\+id = 7}
+

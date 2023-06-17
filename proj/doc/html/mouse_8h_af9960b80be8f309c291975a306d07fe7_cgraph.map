@@ -1,0 +1,8 @@
+<map id="activate_mouse_stream" name="activate_mouse_stream">
+<area shape="rect" id="Node000001" title="activates the mouse stream" alt="" coords="5,5,166,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="410,5,500,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,395,16,395,21,166,21"/>
+<area shape="rect" id="Node000003" href="$_k_b_c_8c.html#a4ff65c3d42fc518a680dc2b7c98d0102" title="writes a command to the KBC" alt="" coords="214,31,362,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,26,199,30,198,35,166,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="362,30,395,25,396,30,363,35"/>
+</map>

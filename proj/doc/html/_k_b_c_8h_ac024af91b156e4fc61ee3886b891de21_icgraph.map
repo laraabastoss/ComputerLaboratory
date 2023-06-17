@@ -1,0 +1,25 @@
+<map id="read_KBC_status" name="read_KBC_status">
+<area shape="rect" id="Node000001" title=" " alt="" coords="650,81,774,107"/>
+<area shape="rect" id="Node000002" href="$_k_b_c_8c.html#a52ac1bb096b341741d01d49dd38c0cd4" title=" " alt="" coords="465,56,590,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="635,86,590,80,590,75,636,81"/>
+<area shape="rect" id="Node000007" href="$_k_b_c_8c.html#a34b653b3939fffe883c903cdadb36d3a" title=" " alt="" coords="453,105,602,131"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="636,107,602,111,602,106,635,101"/>
+<area shape="rect" id="Node000003" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="keyboard interrupt handler, whenever there´s an interrupt from the keyboard it updates the global var..." alt="" coords="169,5,229,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="452,55,405,46,229,24,229,18,406,41,453,50"/>
+<area shape="rect" id="Node000005" href="$keyboard_8c.html#a58017421d19bb2004825d339ebb600fa" title=" " alt="" coords="284,105,405,131"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="464,89,396,107,394,102,463,83"/>
+<area shape="rect" id="Node000006" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="mouse interrupt handler, whenever it receives an interrupt from the mouse it updates the current_byte..." alt="" coords="306,56,383,82"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="451,72,384,72,384,66,451,66"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,81,114,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,41,86,83,84,78,160,36"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="292,76,114,92,114,87,291,71"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="438,121,406,121,406,116,438,116"/>
+<area shape="rect" id="Node000008" href="$mouse_8c.html#a1703c3c5b61eef30d724b15cafd1d75e" title="writes commands directly to the KBC" alt="" coords="297,155,392,180"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="464,138,393,157,392,152,462,133"/>
+<area shape="rect" id="Node000009" href="$main_8c.html#a099d48038e444c2f3e69904477527798" title=" " alt="" coords="172,107,226,132"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="288,152,225,131,227,126,290,147"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#abdcc0cd526b667641db5dc072cc162c4" title=" " alt="" coords="162,156,236,182"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="282,171,236,171,236,166,282,165"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="157,115,114,107,115,101,158,109"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="159,151,84,110,87,105,162,146"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="get_output_KBC" name="get_output_KBC">
+<area shape="rect" id="Node000001" title="reads the output that is currently in the KBC" alt="" coords="5,5,123,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="171,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,16,156,16,156,21,123,21"/>
+</map>

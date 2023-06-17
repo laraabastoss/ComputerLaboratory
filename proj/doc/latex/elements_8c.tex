@@ -1,0 +1,527 @@
+\doxysection{game/elements.c File Reference}
+\hypertarget{elements_8c}{}\label{elements_8c}\index{game/elements.c@{game/elements.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \"{}elements.\+h\"{}}\newline
+Include dependency graph for elements.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{elements_8c_a9ef498aaf5e098d4193dbe654709193e}{update\+Fireboy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em updates Fire\+Boy to the desired next position, checking if he can go there according to the bit map and his current state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_a1ff1b97e7a41b1e91851a3d231a6ff60}{update\+Watergirl}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em updates Water\+Girl to the desired next position, checking if she can go there according to the bit map and her current state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_a8e86a8cb37d0d833d0329bda3f6a35e8}{check\+Gravity\+Fireboy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em checks if Fireboy is on top of a plataform, if not he falls \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_acc251a731ac1de44a3ed61437d258a90}{check\+Gravity\+Watergirl}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em checks if Water\+Girl is on top of a plataform, if not she falls \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_a59c0df8a9001ec8997aca3ae4ff1dd82}{update\+Array\+With\+Level}} (int \mbox{\hyperlink{draw_8c_acf4d33ee4cff36f69b924471174dcb11}{level}})
+\begin{DoxyCompactList}\small\item\em loads a previously allocated array with the current level using a txt file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_ad06989ea1ce0368e3c98231f532c590f}{alocate\+Level\+Array\+Memory}} ()
+\begin{DoxyCompactList}\small\item\em alocates memory for an array of size 1200 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_aec06b94fd6e4befc36f02655e74546f4}{free\+Level\+Array}} ()
+\begin{DoxyCompactList}\small\item\em frees the allocated array for the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8c_aea99321b8febbf2d4c4943a6f16e5ac2}{check\+Platform\+Logic}} (int max\+\_\+height)
+\begin{DoxyCompactList}\small\item\em moves the plataform upwards \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{elements_8c_a4f5c29b2afa624713e433cdb57747d67}{x\+Offset\+Fireboy}} = 0
+\item 
+int \mbox{\hyperlink{elements_8c_aefae1c2d69b0f78c57e52740bf8e410b}{y\+Offset\+Fireboy}} = 0
+\item 
+int \mbox{\hyperlink{elements_8c_a3d379500169935021117c75419b8b469}{x\+Offset\+Watergirl}} = 0
+\item 
+int \mbox{\hyperlink{elements_8c_a39ea6b300c167707ec6799e13879c45b}{y\+Offset\+Watergirl}} = 0
+\item 
+int \mbox{\hyperlink{elements_8c_acefd12ee9fbf56dbb078ecaa76c2b761}{fireboy\+State}} = 0
+\item 
+bool \mbox{\hyperlink{elements_8c_aac206ffd86a39fa403a7bc2ec0aea7eb}{fireboy\+In\+Air}} = false
+\item 
+int \mbox{\hyperlink{elements_8c_a3f33b01e0a09280450911368d7735120}{watergirl\+State}} =0
+\item 
+bool \mbox{\hyperlink{elements_8c_a704cec5ef139d5c62cda55a33630481c}{watergirl\+In\+Air}} =false
+\item 
+int \mbox{\hyperlink{elements_8c_ad87b674fa68e60709d0a728505d056f9}{Up\+Frame\+Fireboy}} = 0
+\item 
+int \mbox{\hyperlink{elements_8c_ae7dd8a14efdf868fffe8a237869f1745}{Up\+Frame\+Watergirl}} = 0
+\item 
+int \mbox{\hyperlink{elements_8c_aabf5bde83eb3500aa597add1a0441fa5}{y\+Platform\+Block\+Offset}} = 0
+\item 
+bool \mbox{\hyperlink{elements_8c_a7e044de5b237f04c3c1a6bcc25bbd61f}{upward\+Motion\+Fireboy}} = false
+\item 
+bool \mbox{\hyperlink{elements_8c_a903da50781a5b02df2722d65c9b5593e}{upward\+Motion\+Watergirl}} = false
+\item 
+bool \mbox{\hyperlink{elements_8c_a1d9fde34cff05df240a27a2763192da1}{lever}} =false
+\item 
+bool \mbox{\hyperlink{elements_8c_a3ac0d589f9e5adcb29364d23b5a0f72c}{fireboy\+On\+Top\+Of\+Platform}} = false
+\item 
+bool \mbox{\hyperlink{elements_8c_a64f0a67f57437d364c1a81a3beff6dd4}{watergirl\+On\+Top\+Of\+Platform}} = false
+\item 
+bool \mbox{\hyperlink{elements_8c_a4b8f58582ff46d8c3c8f1a654b03d290}{platform\+Finished}} = false
+\item 
+bool \mbox{\hyperlink{elements_8c_a9c68d9b8267aa9c441dd055dd51a8907}{two\+\_\+player}} =true
+\item 
+bool \mbox{\hyperlink{elements_8c_a132ba96da5ba28448b61e42c019312a9}{pressed}} =false
+\item 
+bool \mbox{\hyperlink{elements_8c_a87f9005a3bb53f4f3d2b52cab76fe851}{watergirl\+Win}} =false
+\item 
+bool \mbox{\hyperlink{elements_8c_a95d9bd8f5f696c543276add044587261}{fireboy\+Win}} =false
+\item 
+int \mbox{\hyperlink{elements_8c_a63dd38e11c6dd7485eea7a65d289984c}{animation\+Frame\+Watergirl}} = 1
+\item 
+int \mbox{\hyperlink{elements_8c_a6b749f6074c48364780abd93fefc0497}{animation\+Frame\+Fireboy}} = 1
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_a6d6d9d1fee2f05cae09c886a9312265e}{level\+Array}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_af5f712a3aa769ad0cc652dbbab5aeec9}{Fireboy}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_aa2b5e5f92a68df88b6c6cc8bf9c7a93c}{Watergirl}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_ab3d34c2c73c224c5122e32469db8dee8}{Fireboy\+Left1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_aa83af1c53ce8002288f7a4751ec409e1}{Fireboy\+Left2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_aee6a75d0c27ea6e24b19fa841218ed7f}{Fireboy\+Right1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_af073b5791aec262066a11cb1fa9657dc}{Fireboy\+Right2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_a0c3a486fbc16a01644e1f556dfd2a1ee}{Watergirl\+Left1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_a54590b940f5f2c6becd7d78e19dbbb2f}{Watergirl\+Left2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_a2ade9cd24442898de5f5ae0aa33ce3fe}{Watergirl\+Right1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{elements_8c_a9020490b9fbd240d81deffd7aee4c606}{Watergirl\+Right2}}
+\item 
+\mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{elements_8c_a2706ed05d331ef3b53c728a6868bda26}{game\+State}}
+\item 
+int \mbox{\hyperlink{elements_8c_a4da4f222b545dc9fd4d3b7321bf5dd21}{timer\+\_\+break}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{elements_8c_ad06989ea1ce0368e3c98231f532c590f}\label{elements_8c_ad06989ea1ce0368e3c98231f532c590f} 
+\index{elements.c@{elements.c}!alocateLevelArrayMemory@{alocateLevelArrayMemory}}
+\index{alocateLevelArrayMemory@{alocateLevelArrayMemory}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{alocateLevelArrayMemory()}{alocateLevelArrayMemory()}}
+{\footnotesize\ttfamily void alocate\+Level\+Array\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+alocates memory for an array of size 1200 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{elements_8c_ad06989ea1ce0368e3c98231f532c590f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_a8e86a8cb37d0d833d0329bda3f6a35e8}\label{elements_8c_a8e86a8cb37d0d833d0329bda3f6a35e8} 
+\index{elements.c@{elements.c}!checkGravityFireboy@{checkGravityFireboy}}
+\index{checkGravityFireboy@{checkGravityFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{checkGravityFireboy()}{checkGravityFireboy()}}
+{\footnotesize\ttfamily void check\+Gravity\+Fireboy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+checks if Fireboy is on top of a plataform, if not he falls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate that the Fire\+Boy is in \\
+\hline
+{\em y} & y coordinate that the Fire\+Boy is in \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_a8e86a8cb37d0d833d0329bda3f6a35e8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_acc251a731ac1de44a3ed61437d258a90}\label{elements_8c_acc251a731ac1de44a3ed61437d258a90} 
+\index{elements.c@{elements.c}!checkGravityWatergirl@{checkGravityWatergirl}}
+\index{checkGravityWatergirl@{checkGravityWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{checkGravityWatergirl()}{checkGravityWatergirl()}}
+{\footnotesize\ttfamily void check\+Gravity\+Watergirl (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+checks if Water\+Girl is on top of a plataform, if not she falls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate that the Water\+Girl is in \\
+\hline
+{\em y} & y coordinate that the Water\+Girl is in \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_acc251a731ac1de44a3ed61437d258a90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_aea99321b8febbf2d4c4943a6f16e5ac2}\label{elements_8c_aea99321b8febbf2d4c4943a6f16e5ac2} 
+\index{elements.c@{elements.c}!checkPlatformLogic@{checkPlatformLogic}}
+\index{checkPlatformLogic@{checkPlatformLogic}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{checkPlatformLogic()}{checkPlatformLogic()}}
+{\footnotesize\ttfamily void check\+Platform\+Logic (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+moves the plataform upwards 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+height} & maximum height the plataform can go to \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_aea99321b8febbf2d4c4943a6f16e5ac2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_aec06b94fd6e4befc36f02655e74546f4}\label{elements_8c_aec06b94fd6e4befc36f02655e74546f4} 
+\index{elements.c@{elements.c}!freeLevelArray@{freeLevelArray}}
+\index{freeLevelArray@{freeLevelArray}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{freeLevelArray()}{freeLevelArray()}}
+{\footnotesize\ttfamily void free\+Level\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+frees the allocated array for the level 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{elements_8c_aec06b94fd6e4befc36f02655e74546f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_a59c0df8a9001ec8997aca3ae4ff1dd82}\label{elements_8c_a59c0df8a9001ec8997aca3ae4ff1dd82} 
+\index{elements.c@{elements.c}!updateArrayWithLevel@{updateArrayWithLevel}}
+\index{updateArrayWithLevel@{updateArrayWithLevel}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{updateArrayWithLevel()}{updateArrayWithLevel()}}
+{\footnotesize\ttfamily void update\+Array\+With\+Level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+loads a previously allocated array with the current level using a txt file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & current level of the user \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_a59c0df8a9001ec8997aca3ae4ff1dd82_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_a9ef498aaf5e098d4193dbe654709193e}\label{elements_8c_a9ef498aaf5e098d4193dbe654709193e} 
+\index{elements.c@{elements.c}!updateFireboy@{updateFireboy}}
+\index{updateFireboy@{updateFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{updateFireboy()}{updateFireboy()}}
+{\footnotesize\ttfamily void update\+Fireboy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+updates Fire\+Boy to the desired next position, checking if he can go there according to the bit map and his current state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate the Fire\+Boy wants to go to \\
+\hline
+{\em y} & y coordinate the Fire\+Boy wants to go to \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_a9ef498aaf5e098d4193dbe654709193e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_a9ef498aaf5e098d4193dbe654709193e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8c_a1ff1b97e7a41b1e91851a3d231a6ff60}\label{elements_8c_a1ff1b97e7a41b1e91851a3d231a6ff60} 
+\index{elements.c@{elements.c}!updateWatergirl@{updateWatergirl}}
+\index{updateWatergirl@{updateWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{updateWatergirl()}{updateWatergirl()}}
+{\footnotesize\ttfamily void update\+Watergirl (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+updates Water\+Girl to the desired next position, checking if she can go there according to the bit map and her current state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate the Water\+Girl wants to go to \\
+\hline
+{\em y} & y coordinate the Water\+Girl wants to go to \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_a1ff1b97e7a41b1e91851a3d231a6ff60_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8c_a1ff1b97e7a41b1e91851a3d231a6ff60_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{elements_8c_a6b749f6074c48364780abd93fefc0497}\label{elements_8c_a6b749f6074c48364780abd93fefc0497} 
+\index{elements.c@{elements.c}!animationFrameFireboy@{animationFrameFireboy}}
+\index{animationFrameFireboy@{animationFrameFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{animationFrameFireboy}{animationFrameFireboy}}
+{\footnotesize\ttfamily int animation\+Frame\+Fireboy = 1}
+
+\Hypertarget{elements_8c_a63dd38e11c6dd7485eea7a65d289984c}\label{elements_8c_a63dd38e11c6dd7485eea7a65d289984c} 
+\index{elements.c@{elements.c}!animationFrameWatergirl@{animationFrameWatergirl}}
+\index{animationFrameWatergirl@{animationFrameWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{animationFrameWatergirl}{animationFrameWatergirl}}
+{\footnotesize\ttfamily int animation\+Frame\+Watergirl = 1}
+
+\Hypertarget{elements_8c_af5f712a3aa769ad0cc652dbbab5aeec9}\label{elements_8c_af5f712a3aa769ad0cc652dbbab5aeec9} 
+\index{elements.c@{elements.c}!Fireboy@{Fireboy}}
+\index{Fireboy@{Fireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{Fireboy}{Fireboy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Fireboy\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_aac206ffd86a39fa403a7bc2ec0aea7eb}\label{elements_8c_aac206ffd86a39fa403a7bc2ec0aea7eb} 
+\index{elements.c@{elements.c}!fireboyInAir@{fireboyInAir}}
+\index{fireboyInAir@{fireboyInAir}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{fireboyInAir}{fireboyInAir}}
+{\footnotesize\ttfamily bool fireboy\+In\+Air = false}
+
+\Hypertarget{elements_8c_ab3d34c2c73c224c5122e32469db8dee8}\label{elements_8c_ab3d34c2c73c224c5122e32469db8dee8} 
+\index{elements.c@{elements.c}!FireboyLeft1@{FireboyLeft1}}
+\index{FireboyLeft1@{FireboyLeft1}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{FireboyLeft1}{FireboyLeft1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Fireboy\+Left1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_aa83af1c53ce8002288f7a4751ec409e1}\label{elements_8c_aa83af1c53ce8002288f7a4751ec409e1} 
+\index{elements.c@{elements.c}!FireboyLeft2@{FireboyLeft2}}
+\index{FireboyLeft2@{FireboyLeft2}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{FireboyLeft2}{FireboyLeft2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Fireboy\+Left2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a3ac0d589f9e5adcb29364d23b5a0f72c}\label{elements_8c_a3ac0d589f9e5adcb29364d23b5a0f72c} 
+\index{elements.c@{elements.c}!fireboyOnTopOfPlatform@{fireboyOnTopOfPlatform}}
+\index{fireboyOnTopOfPlatform@{fireboyOnTopOfPlatform}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{fireboyOnTopOfPlatform}{fireboyOnTopOfPlatform}}
+{\footnotesize\ttfamily bool fireboy\+On\+Top\+Of\+Platform = false}
+
+\Hypertarget{elements_8c_aee6a75d0c27ea6e24b19fa841218ed7f}\label{elements_8c_aee6a75d0c27ea6e24b19fa841218ed7f} 
+\index{elements.c@{elements.c}!FireboyRight1@{FireboyRight1}}
+\index{FireboyRight1@{FireboyRight1}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{FireboyRight1}{FireboyRight1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Fireboy\+Right1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_af073b5791aec262066a11cb1fa9657dc}\label{elements_8c_af073b5791aec262066a11cb1fa9657dc} 
+\index{elements.c@{elements.c}!FireboyRight2@{FireboyRight2}}
+\index{FireboyRight2@{FireboyRight2}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{FireboyRight2}{FireboyRight2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Fireboy\+Right2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_acefd12ee9fbf56dbb078ecaa76c2b761}\label{elements_8c_acefd12ee9fbf56dbb078ecaa76c2b761} 
+\index{elements.c@{elements.c}!fireboyState@{fireboyState}}
+\index{fireboyState@{fireboyState}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{fireboyState}{fireboyState}}
+{\footnotesize\ttfamily int fireboy\+State = 0}
+
+\Hypertarget{elements_8c_a95d9bd8f5f696c543276add044587261}\label{elements_8c_a95d9bd8f5f696c543276add044587261} 
+\index{elements.c@{elements.c}!fireboyWin@{fireboyWin}}
+\index{fireboyWin@{fireboyWin}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{fireboyWin}{fireboyWin}}
+{\footnotesize\ttfamily bool fireboy\+Win =false}
+
+\Hypertarget{elements_8c_a2706ed05d331ef3b53c728a6868bda26}\label{elements_8c_a2706ed05d331ef3b53c728a6868bda26} 
+\index{elements.c@{elements.c}!gameState@{gameState}}
+\index{gameState@{gameState}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} game\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a6d6d9d1fee2f05cae09c886a9312265e}\label{elements_8c_a6d6d9d1fee2f05cae09c886a9312265e} 
+\index{elements.c@{elements.c}!levelArray@{levelArray}}
+\index{levelArray@{levelArray}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{levelArray}{levelArray}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} level\+Array}
+
+\Hypertarget{elements_8c_a1d9fde34cff05df240a27a2763192da1}\label{elements_8c_a1d9fde34cff05df240a27a2763192da1} 
+\index{elements.c@{elements.c}!lever@{lever}}
+\index{lever@{lever}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{lever}{lever}}
+{\footnotesize\ttfamily bool lever =false}
+
+\Hypertarget{elements_8c_a4b8f58582ff46d8c3c8f1a654b03d290}\label{elements_8c_a4b8f58582ff46d8c3c8f1a654b03d290} 
+\index{elements.c@{elements.c}!platformFinished@{platformFinished}}
+\index{platformFinished@{platformFinished}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{platformFinished}{platformFinished}}
+{\footnotesize\ttfamily bool platform\+Finished = false}
+
+\Hypertarget{elements_8c_a132ba96da5ba28448b61e42c019312a9}\label{elements_8c_a132ba96da5ba28448b61e42c019312a9} 
+\index{elements.c@{elements.c}!pressed@{pressed}}
+\index{pressed@{pressed}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily bool pressed =false}
+
+\Hypertarget{elements_8c_a4da4f222b545dc9fd4d3b7321bf5dd21}\label{elements_8c_a4da4f222b545dc9fd4d3b7321bf5dd21} 
+\index{elements.c@{elements.c}!timer\_break@{timer\_break}}
+\index{timer\_break@{timer\_break}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{timer\_break}{timer\_break}}
+{\footnotesize\ttfamily int timer\+\_\+break\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a9c68d9b8267aa9c441dd055dd51a8907}\label{elements_8c_a9c68d9b8267aa9c441dd055dd51a8907} 
+\index{elements.c@{elements.c}!two\_player@{two\_player}}
+\index{two\_player@{two\_player}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{two\_player}{two\_player}}
+{\footnotesize\ttfamily bool two\+\_\+player =true}
+
+\Hypertarget{elements_8c_ad87b674fa68e60709d0a728505d056f9}\label{elements_8c_ad87b674fa68e60709d0a728505d056f9} 
+\index{elements.c@{elements.c}!UpFrameFireboy@{UpFrameFireboy}}
+\index{UpFrameFireboy@{UpFrameFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{UpFrameFireboy}{UpFrameFireboy}}
+{\footnotesize\ttfamily int Up\+Frame\+Fireboy = 0}
+
+\Hypertarget{elements_8c_ae7dd8a14efdf868fffe8a237869f1745}\label{elements_8c_ae7dd8a14efdf868fffe8a237869f1745} 
+\index{elements.c@{elements.c}!UpFrameWatergirl@{UpFrameWatergirl}}
+\index{UpFrameWatergirl@{UpFrameWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{UpFrameWatergirl}{UpFrameWatergirl}}
+{\footnotesize\ttfamily int Up\+Frame\+Watergirl = 0}
+
+\Hypertarget{elements_8c_a7e044de5b237f04c3c1a6bcc25bbd61f}\label{elements_8c_a7e044de5b237f04c3c1a6bcc25bbd61f} 
+\index{elements.c@{elements.c}!upwardMotionFireboy@{upwardMotionFireboy}}
+\index{upwardMotionFireboy@{upwardMotionFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{upwardMotionFireboy}{upwardMotionFireboy}}
+{\footnotesize\ttfamily bool upward\+Motion\+Fireboy = false}
+
+\Hypertarget{elements_8c_a903da50781a5b02df2722d65c9b5593e}\label{elements_8c_a903da50781a5b02df2722d65c9b5593e} 
+\index{elements.c@{elements.c}!upwardMotionWatergirl@{upwardMotionWatergirl}}
+\index{upwardMotionWatergirl@{upwardMotionWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{upwardMotionWatergirl}{upwardMotionWatergirl}}
+{\footnotesize\ttfamily bool upward\+Motion\+Watergirl = false}
+
+\Hypertarget{elements_8c_aa2b5e5f92a68df88b6c6cc8bf9c7a93c}\label{elements_8c_aa2b5e5f92a68df88b6c6cc8bf9c7a93c} 
+\index{elements.c@{elements.c}!Watergirl@{Watergirl}}
+\index{Watergirl@{Watergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{Watergirl}{Watergirl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Watergirl\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a704cec5ef139d5c62cda55a33630481c}\label{elements_8c_a704cec5ef139d5c62cda55a33630481c} 
+\index{elements.c@{elements.c}!watergirlInAir@{watergirlInAir}}
+\index{watergirlInAir@{watergirlInAir}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{watergirlInAir}{watergirlInAir}}
+{\footnotesize\ttfamily bool watergirl\+In\+Air =false}
+
+\Hypertarget{elements_8c_a0c3a486fbc16a01644e1f556dfd2a1ee}\label{elements_8c_a0c3a486fbc16a01644e1f556dfd2a1ee} 
+\index{elements.c@{elements.c}!WatergirlLeft1@{WatergirlLeft1}}
+\index{WatergirlLeft1@{WatergirlLeft1}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{WatergirlLeft1}{WatergirlLeft1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Watergirl\+Left1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a54590b940f5f2c6becd7d78e19dbbb2f}\label{elements_8c_a54590b940f5f2c6becd7d78e19dbbb2f} 
+\index{elements.c@{elements.c}!WatergirlLeft2@{WatergirlLeft2}}
+\index{WatergirlLeft2@{WatergirlLeft2}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{WatergirlLeft2}{WatergirlLeft2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Watergirl\+Left2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a64f0a67f57437d364c1a81a3beff6dd4}\label{elements_8c_a64f0a67f57437d364c1a81a3beff6dd4} 
+\index{elements.c@{elements.c}!watergirlOnTopOfPlatform@{watergirlOnTopOfPlatform}}
+\index{watergirlOnTopOfPlatform@{watergirlOnTopOfPlatform}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{watergirlOnTopOfPlatform}{watergirlOnTopOfPlatform}}
+{\footnotesize\ttfamily bool watergirl\+On\+Top\+Of\+Platform = false}
+
+\Hypertarget{elements_8c_a2ade9cd24442898de5f5ae0aa33ce3fe}\label{elements_8c_a2ade9cd24442898de5f5ae0aa33ce3fe} 
+\index{elements.c@{elements.c}!WatergirlRight1@{WatergirlRight1}}
+\index{WatergirlRight1@{WatergirlRight1}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{WatergirlRight1}{WatergirlRight1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Watergirl\+Right1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a9020490b9fbd240d81deffd7aee4c606}\label{elements_8c_a9020490b9fbd240d81deffd7aee4c606} 
+\index{elements.c@{elements.c}!WatergirlRight2@{WatergirlRight2}}
+\index{WatergirlRight2@{WatergirlRight2}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{WatergirlRight2}{WatergirlRight2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} Watergirl\+Right2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{elements_8c_a3f33b01e0a09280450911368d7735120}\label{elements_8c_a3f33b01e0a09280450911368d7735120} 
+\index{elements.c@{elements.c}!watergirlState@{watergirlState}}
+\index{watergirlState@{watergirlState}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{watergirlState}{watergirlState}}
+{\footnotesize\ttfamily int watergirl\+State =0}
+
+\Hypertarget{elements_8c_a87f9005a3bb53f4f3d2b52cab76fe851}\label{elements_8c_a87f9005a3bb53f4f3d2b52cab76fe851} 
+\index{elements.c@{elements.c}!watergirlWin@{watergirlWin}}
+\index{watergirlWin@{watergirlWin}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{watergirlWin}{watergirlWin}}
+{\footnotesize\ttfamily bool watergirl\+Win =false}
+
+\Hypertarget{elements_8c_a4f5c29b2afa624713e433cdb57747d67}\label{elements_8c_a4f5c29b2afa624713e433cdb57747d67} 
+\index{elements.c@{elements.c}!xOffsetFireboy@{xOffsetFireboy}}
+\index{xOffsetFireboy@{xOffsetFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{xOffsetFireboy}{xOffsetFireboy}}
+{\footnotesize\ttfamily int x\+Offset\+Fireboy = 0}
+
+\Hypertarget{elements_8c_a3d379500169935021117c75419b8b469}\label{elements_8c_a3d379500169935021117c75419b8b469} 
+\index{elements.c@{elements.c}!xOffsetWatergirl@{xOffsetWatergirl}}
+\index{xOffsetWatergirl@{xOffsetWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{xOffsetWatergirl}{xOffsetWatergirl}}
+{\footnotesize\ttfamily int x\+Offset\+Watergirl = 0}
+
+\Hypertarget{elements_8c_aefae1c2d69b0f78c57e52740bf8e410b}\label{elements_8c_aefae1c2d69b0f78c57e52740bf8e410b} 
+\index{elements.c@{elements.c}!yOffsetFireboy@{yOffsetFireboy}}
+\index{yOffsetFireboy@{yOffsetFireboy}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{yOffsetFireboy}{yOffsetFireboy}}
+{\footnotesize\ttfamily int y\+Offset\+Fireboy = 0}
+
+\Hypertarget{elements_8c_a39ea6b300c167707ec6799e13879c45b}\label{elements_8c_a39ea6b300c167707ec6799e13879c45b} 
+\index{elements.c@{elements.c}!yOffsetWatergirl@{yOffsetWatergirl}}
+\index{yOffsetWatergirl@{yOffsetWatergirl}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{yOffsetWatergirl}{yOffsetWatergirl}}
+{\footnotesize\ttfamily int y\+Offset\+Watergirl = 0}
+
+\Hypertarget{elements_8c_aabf5bde83eb3500aa597add1a0441fa5}\label{elements_8c_aabf5bde83eb3500aa597add1a0441fa5} 
+\index{elements.c@{elements.c}!yPlatformBlockOffset@{yPlatformBlockOffset}}
+\index{yPlatformBlockOffset@{yPlatformBlockOffset}!elements.c@{elements.c}}
+\doxysubsubsection{\texorpdfstring{yPlatformBlockOffset}{yPlatformBlockOffset}}
+{\footnotesize\ttfamily int y\+Platform\+Block\+Offset = 0}
+

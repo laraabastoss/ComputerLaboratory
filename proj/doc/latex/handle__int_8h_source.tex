@@ -1,0 +1,65 @@
+\doxysection{handle\+\_\+int.\+h}
+\hypertarget{handle__int_8h_source}{}\label{handle__int_8h_source}\mbox{\hyperlink{handle__int_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_HANDLE\_INT\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_HANDLE\_INT\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ RIGHT\ 2}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ LEFT\ 1}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ STOPPED\ 0}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ JUMP\_OVER\ 999}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ LEVER\_LEFT\ 111}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ LEVER\_RIGHT\ 112}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ WON\_INST\ 113}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ RESET\_VAR\ 114}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ RESET\_VAR\_PLUS\_LEVEL\ 115}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ RESET\_VAR\_LEVEL\_ONE\ 116}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ EXIT\_GAME\ 117}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <minix/sysutil.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_k_b_c_8h}{devices/KBC.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mouse_8h}{devices/mouse/mouse.h}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{graphics_8h}{devices/video/graphics.h}}"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rtc_8h}{devices/rtc/rtc.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{serial__port_8h}{devices/sp/serial\_port.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{draw_8h}{game/draw.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{elements_8h}{game/elements.h}}"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16faf8fe80cd407b467c5505031338be8122}{EXECUTING}},}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16fa7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}},}
+\DoxyCodeLine{00032\ \}\ \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16f}{ProjState}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a13d000b4d7dc70d90239b7430d1eb6b2}{START}},\ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}},}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317}{LOST}},}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872}{WON}},}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7d5532535d207f54e183254948c72d1e}{MP\_GAME}},}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a06b876bcf37a32fed1dbadf4273827bf}{CONNECTING}}}
+\DoxyCodeLine{00041\ \}\ \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_a3805e8c0c25474ab315fa8b95eb5dea0}{handle\_int\_timer}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_a5587175760c801902df41c23595504e5}{handle\_int\_keyboard}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_a66ed4cf9cdbf28ab9a0e13173a373ef9}{handle\_sp\_data\_multiplayer}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_a293e68cd22ee8891ead7e26c7ce81653}{handle\_int\_keyboard\_multiplayer\_transmit}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_ad9a0ce174cc6729af07e0dd89bc924bc}{handle\_int\_mouse\_click}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_ac26df66d75851dc8f7d1706e2daa70ff}{handle\_int\_rtc}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_ae113fc9cbcb554d0656c9f376bab6632}{handle\_int\_sp}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{handle__int_8h_a8647c0cda9304b2e6afcef279a69ba42}{resetVariables}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00068\ }
+
+\end{DoxyCode}

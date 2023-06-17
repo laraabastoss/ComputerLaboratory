@@ -1,0 +1,529 @@
+\doxysection{handle\+\_\+int.\+c File Reference}
+\hypertarget{handle__int_8c}{}\label{handle__int_8c}\index{handle\_int.c@{handle\_int.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \"{}handle\+\_\+int.\+h\"{}}\newline
+Include dependency graph for handle\+\_\+int.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{handle__int_8c_a3805e8c0c25474ab315fa8b95eb5dea0}{handle\+\_\+int\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a timer interrupt, used for the characters jumps and to move the plataform \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_a5587175760c801902df41c23595504e5}{handle\+\_\+int\+\_\+keyboard}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a keyboard interrupt, moving the characters according to the received scancode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_a66ed4cf9cdbf28ab9a0e13173a373ef9}{handle\+\_\+sp\+\_\+data\+\_\+multiplayer}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a serial port interrupt in the multiplayer mode, processing the 8 bit variable received and, accordingly, moving the characters, pushes the lever, finishes or wins the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_a293e68cd22ee8891ead7e26c7ce81653}{handle\+\_\+int\+\_\+keyboard\+\_\+multiplayer\+\_\+transmit}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a keyboard interrupt in the multiplayer mode, moving the characters according to the received scancode if it´s its own character, and sending the scancode to the serial port if it´s the other character \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_ad9a0ce174cc6729af07e0dd89bc924bc}{handle\+\_\+int\+\_\+mouse\+\_\+click}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a mouse interrupt and the right button is clicked, used for clicking the buttons and pushing the lever \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_ac26df66d75851dc8f7d1706e2daa70ff}{handle\+\_\+int\+\_\+rtc}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_ae113fc9cbcb554d0656c9f376bab6632}{handle\+\_\+int\+\_\+sp}} ()
+\begin{DoxyCompactList}\small\item\em interacts with the game everytime there is a serial port interrupt, checking wahtºs the current state of the serial port \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handle__int_8c_a8647c0cda9304b2e6afcef279a69ba42}{reset\+Variables}} ()
+\begin{DoxyCompactList}\small\item\em resets all the variables used for the characters and the obstacules movements everytime a level is won or lost \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{handle__int_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+\mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}} \mbox{\hyperlink{handle__int_8c_a419ddb548814ee8d98648423c8caad82}{mouse\+\_\+packet}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{handle__int_8c_a3f79b04e621cae90f2c5ad2786ee153f}{vbe\+\_\+info}}
+\item 
+\mbox{\hyperlink{struct_r_t_c__structure}{RTC\+\_\+structure}} \mbox{\hyperlink{handle__int_8c_a78476cfb8388653c6f96a6fac0982e5e}{time\+\_\+info}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{handle__int_8c_a8e9b0ada4a0dacf939bdac2d2c6b9948}{sp\+\_\+data}}
+\item 
+\mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16f}{Proj\+State}} \mbox{\hyperlink{handle__int_8c_a745831eabba46507927ea8c5aeee41fb}{proj\+State}} = \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16faf8fe80cd407b467c5505031338be8122}{EXECUTING}}
+\item 
+\mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{handle__int_8c_a2706ed05d331ef3b53c728a6868bda26}{game\+State}} = \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a13d000b4d7dc70d90239b7430d1eb6b2}{START}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_acf4d33ee4cff36f69b924471174dcb11}{level}} =1
+\item 
+int \mbox{\hyperlink{handle__int_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}{player}} =1
+\item 
+int \mbox{\hyperlink{handle__int_8c_a4da4f222b545dc9fd4d3b7321bf5dd21}{timer\+\_\+break}} = 0
+\item 
+int \mbox{\hyperlink{handle__int_8c_a4f5c29b2afa624713e433cdb57747d67}{x\+Offset\+Fireboy}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_aefae1c2d69b0f78c57e52740bf8e410b}{y\+Offset\+Fireboy}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_a3d379500169935021117c75419b8b469}{x\+Offset\+Watergirl}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_a39ea6b300c167707ec6799e13879c45b}{y\+Offset\+Watergirl}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_acefd12ee9fbf56dbb078ecaa76c2b761}{fireboy\+State}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_aac206ffd86a39fa403a7bc2ec0aea7eb}{fireboy\+In\+Air}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_a3f33b01e0a09280450911368d7735120}{watergirl\+State}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a704cec5ef139d5c62cda55a33630481c}{watergirl\+In\+Air}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_ad87b674fa68e60709d0a728505d056f9}{Up\+Frame\+Fireboy}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_ae7dd8a14efdf868fffe8a237869f1745}{Up\+Frame\+Watergirl}}
+\item 
+int \mbox{\hyperlink{handle__int_8c_aabf5bde83eb3500aa597add1a0441fa5}{y\+Platform\+Block\+Offset}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a7e044de5b237f04c3c1a6bcc25bbd61f}{upward\+Motion\+Fireboy}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a903da50781a5b02df2722d65c9b5593e}{upward\+Motion\+Watergirl}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a1d9fde34cff05df240a27a2763192da1}{lever}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a3ac0d589f9e5adcb29364d23b5a0f72c}{fireboy\+On\+Top\+Of\+Platform}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a64f0a67f57437d364c1a81a3beff6dd4}{watergirl\+On\+Top\+Of\+Platform}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a4b8f58582ff46d8c3c8f1a654b03d290}{platform\+Finished}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a9c68d9b8267aa9c441dd055dd51a8907}{two\+\_\+player}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a132ba96da5ba28448b61e42c019312a9}{pressed}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a87f9005a3bb53f4f3d2b52cab76fe851}{watergirl\+Win}}
+\item 
+bool \mbox{\hyperlink{handle__int_8c_a95d9bd8f5f696c543276add044587261}{fireboy\+Win}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{handle__int_8c_a6d6d9d1fee2f05cae09c886a9312265e}{level\+Array}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{handle__int_8c_aa7eaf5f24918e8addc3f295f7c94dc63}{main\+Buffer}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{handle__int_8c_af50f7a04855994a6559b968855d7b866}{secondary\+Buffer}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{handle__int_8c_a1afecc1a6b1c406d4b5a7ad5102f10c7}{framebuffer\+\_\+size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{handle__int_8c_a5587175760c801902df41c23595504e5}\label{handle__int_8c_a5587175760c801902df41c23595504e5} 
+\index{handle\_int.c@{handle\_int.c}!handle\_int\_keyboard@{handle\_int\_keyboard}}
+\index{handle\_int\_keyboard@{handle\_int\_keyboard}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_keyboard()}{handle\_int\_keyboard()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a keyboard interrupt, moving the characters according to the received scancode 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a5587175760c801902df41c23595504e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a5587175760c801902df41c23595504e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_a293e68cd22ee8891ead7e26c7ce81653}\label{handle__int_8c_a293e68cd22ee8891ead7e26c7ce81653} 
+\index{handle\_int.c@{handle\_int.c}!handle\_int\_keyboard\_multiplayer\_transmit@{handle\_int\_keyboard\_multiplayer\_transmit}}
+\index{handle\_int\_keyboard\_multiplayer\_transmit@{handle\_int\_keyboard\_multiplayer\_transmit}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_keyboard\_multiplayer\_transmit()}{handle\_int\_keyboard\_multiplayer\_transmit()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+keyboard\+\_\+multiplayer\+\_\+transmit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a keyboard interrupt in the multiplayer mode, moving the characters according to the received scancode if it´s its own character, and sending the scancode to the serial port if it´s the other character 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a293e68cd22ee8891ead7e26c7ce81653_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a293e68cd22ee8891ead7e26c7ce81653_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_ad9a0ce174cc6729af07e0dd89bc924bc}\label{handle__int_8c_ad9a0ce174cc6729af07e0dd89bc924bc} 
+\index{handle\_int.c@{handle\_int.c}!handle\_int\_mouse\_click@{handle\_int\_mouse\_click}}
+\index{handle\_int\_mouse\_click@{handle\_int\_mouse\_click}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_mouse\_click()}{handle\_int\_mouse\_click()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+mouse\+\_\+click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a mouse interrupt and the right button is clicked, used for clicking the buttons and pushing the lever 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_ad9a0ce174cc6729af07e0dd89bc924bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_ad9a0ce174cc6729af07e0dd89bc924bc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_ac26df66d75851dc8f7d1706e2daa70ff}\label{handle__int_8c_ac26df66d75851dc8f7d1706e2daa70ff} 
+\index{handle\_int.c@{handle\_int.c}!handle\_int\_rtc@{handle\_int\_rtc}}
+\index{handle\_int\_rtc@{handle\_int\_rtc}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_rtc()}{handle\_int\_rtc()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+rtc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the screen 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_ac26df66d75851dc8f7d1706e2daa70ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_ac26df66d75851dc8f7d1706e2daa70ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_ae113fc9cbcb554d0656c9f376bab6632}\label{handle__int_8c_ae113fc9cbcb554d0656c9f376bab6632} 
+\index{handle\_int.c@{handle\_int.c}!handle\_int\_sp@{handle\_int\_sp}}
+\index{handle\_int\_sp@{handle\_int\_sp}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_sp()}{handle\_int\_sp()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+sp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a serial port interrupt, checking wahtºs the current state of the serial port 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_ae113fc9cbcb554d0656c9f376bab6632_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_ae113fc9cbcb554d0656c9f376bab6632_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_a3805e8c0c25474ab315fa8b95eb5dea0}\label{handle__int_8c_a3805e8c0c25474ab315fa8b95eb5dea0} 
+\index{handle\_int.c@{handle\_int.c}!handle\_int\_timer@{handle\_int\_timer}}
+\index{handle\_int\_timer@{handle\_int\_timer}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_int\_timer()}{handle\_int\_timer()}}
+{\footnotesize\ttfamily void handle\+\_\+int\+\_\+timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a timer interrupt, used for the characters jumps and to move the plataform 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a3805e8c0c25474ab315fa8b95eb5dea0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a3805e8c0c25474ab315fa8b95eb5dea0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_a66ed4cf9cdbf28ab9a0e13173a373ef9}\label{handle__int_8c_a66ed4cf9cdbf28ab9a0e13173a373ef9} 
+\index{handle\_int.c@{handle\_int.c}!handle\_sp\_data\_multiplayer@{handle\_sp\_data\_multiplayer}}
+\index{handle\_sp\_data\_multiplayer@{handle\_sp\_data\_multiplayer}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{handle\_sp\_data\_multiplayer()}{handle\_sp\_data\_multiplayer()}}
+{\footnotesize\ttfamily void handle\+\_\+sp\+\_\+data\+\_\+multiplayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+interacts with the game everytime there is a serial port interrupt in the multiplayer mode, processing the 8 bit variable received and, accordingly, moving the characters, pushes the lever, finishes or wins the level 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a66ed4cf9cdbf28ab9a0e13173a373ef9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a66ed4cf9cdbf28ab9a0e13173a373ef9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handle__int_8c_a8647c0cda9304b2e6afcef279a69ba42}\label{handle__int_8c_a8647c0cda9304b2e6afcef279a69ba42} 
+\index{handle\_int.c@{handle\_int.c}!resetVariables@{resetVariables}}
+\index{resetVariables@{resetVariables}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{resetVariables()}{resetVariables()}}
+{\footnotesize\ttfamily void reset\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets all the variables used for the characters and the obstacules movements everytime a level is won or lost 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{handle__int_8c_a8647c0cda9304b2e6afcef279a69ba42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handle__int_8c_a8647c0cda9304b2e6afcef279a69ba42_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{handle__int_8c_aac206ffd86a39fa403a7bc2ec0aea7eb}\label{handle__int_8c_aac206ffd86a39fa403a7bc2ec0aea7eb} 
+\index{handle\_int.c@{handle\_int.c}!fireboyInAir@{fireboyInAir}}
+\index{fireboyInAir@{fireboyInAir}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{fireboyInAir}{fireboyInAir}}
+{\footnotesize\ttfamily bool fireboy\+In\+Air\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a3ac0d589f9e5adcb29364d23b5a0f72c}\label{handle__int_8c_a3ac0d589f9e5adcb29364d23b5a0f72c} 
+\index{handle\_int.c@{handle\_int.c}!fireboyOnTopOfPlatform@{fireboyOnTopOfPlatform}}
+\index{fireboyOnTopOfPlatform@{fireboyOnTopOfPlatform}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{fireboyOnTopOfPlatform}{fireboyOnTopOfPlatform}}
+{\footnotesize\ttfamily bool fireboy\+On\+Top\+Of\+Platform\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_acefd12ee9fbf56dbb078ecaa76c2b761}\label{handle__int_8c_acefd12ee9fbf56dbb078ecaa76c2b761} 
+\index{handle\_int.c@{handle\_int.c}!fireboyState@{fireboyState}}
+\index{fireboyState@{fireboyState}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{fireboyState}{fireboyState}}
+{\footnotesize\ttfamily int fireboy\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a95d9bd8f5f696c543276add044587261}\label{handle__int_8c_a95d9bd8f5f696c543276add044587261} 
+\index{handle\_int.c@{handle\_int.c}!fireboyWin@{fireboyWin}}
+\index{fireboyWin@{fireboyWin}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{fireboyWin}{fireboyWin}}
+{\footnotesize\ttfamily bool fireboy\+Win\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a1afecc1a6b1c406d4b5a7ad5102f10c7}\label{handle__int_8c_a1afecc1a6b1c406d4b5a7ad5102f10c7} 
+\index{handle\_int.c@{handle\_int.c}!framebuffer\_size@{framebuffer\_size}}
+\index{framebuffer\_size@{framebuffer\_size}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{framebuffer\_size}{framebuffer\_size}}
+{\footnotesize\ttfamily uint32\+\_\+t framebuffer\+\_\+size\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a2706ed05d331ef3b53c728a6868bda26}\label{handle__int_8c_a2706ed05d331ef3b53c728a6868bda26} 
+\index{handle\_int.c@{handle\_int.c}!gameState@{gameState}}
+\index{gameState@{gameState}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} game\+State = \mbox{\hyperlink{handle__int_8h_a7899b65f1ea0f655e4bbf8d2a5714285a13d000b4d7dc70d90239b7430d1eb6b2}{START}}}
+
+\Hypertarget{handle__int_8c_acf4d33ee4cff36f69b924471174dcb11}\label{handle__int_8c_acf4d33ee4cff36f69b924471174dcb11} 
+\index{handle\_int.c@{handle\_int.c}!level@{level}}
+\index{level@{level}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int level =1}
+
+\Hypertarget{handle__int_8c_a6d6d9d1fee2f05cae09c886a9312265e}\label{handle__int_8c_a6d6d9d1fee2f05cae09c886a9312265e} 
+\index{handle\_int.c@{handle\_int.c}!levelArray@{levelArray}}
+\index{levelArray@{levelArray}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{levelArray}{levelArray}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} level\+Array\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a1d9fde34cff05df240a27a2763192da1}\label{handle__int_8c_a1d9fde34cff05df240a27a2763192da1} 
+\index{handle\_int.c@{handle\_int.c}!lever@{lever}}
+\index{lever@{lever}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{lever}{lever}}
+{\footnotesize\ttfamily bool lever\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_aa7eaf5f24918e8addc3f295f7c94dc63}\label{handle__int_8c_aa7eaf5f24918e8addc3f295f7c94dc63} 
+\index{handle\_int.c@{handle\_int.c}!mainBuffer@{mainBuffer}}
+\index{mainBuffer@{mainBuffer}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{mainBuffer}{mainBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t\texorpdfstring{$\ast$}{*} main\+Buffer\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a419ddb548814ee8d98648423c8caad82}\label{handle__int_8c_a419ddb548814ee8d98648423c8caad82} 
+\index{handle\_int.c@{handle\_int.c}!mouse\_packet@{mouse\_packet}}
+\index{mouse\_packet@{mouse\_packet}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet}{mouse\_packet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}} mouse\+\_\+packet\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a4b8f58582ff46d8c3c8f1a654b03d290}\label{handle__int_8c_a4b8f58582ff46d8c3c8f1a654b03d290} 
+\index{handle\_int.c@{handle\_int.c}!platformFinished@{platformFinished}}
+\index{platformFinished@{platformFinished}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{platformFinished}{platformFinished}}
+{\footnotesize\ttfamily bool platform\+Finished\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}\label{handle__int_8c_ae78f447e0fc84c538b91b0cc8c8a34fa} 
+\index{handle\_int.c@{handle\_int.c}!player@{player}}
+\index{player@{player}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily int player =1}
+
+\Hypertarget{handle__int_8c_a132ba96da5ba28448b61e42c019312a9}\label{handle__int_8c_a132ba96da5ba28448b61e42c019312a9} 
+\index{handle\_int.c@{handle\_int.c}!pressed@{pressed}}
+\index{pressed@{pressed}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily bool pressed\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a745831eabba46507927ea8c5aeee41fb}\label{handle__int_8c_a745831eabba46507927ea8c5aeee41fb} 
+\index{handle\_int.c@{handle\_int.c}!projState@{projState}}
+\index{projState@{projState}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{projState}{projState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16f}{Proj\+State}} proj\+State = \mbox{\hyperlink{handle__int_8h_a699844254d35e2aed02ce41ea729a16faf8fe80cd407b467c5505031338be8122}{EXECUTING}}}
+
+\Hypertarget{handle__int_8c_aa1de7a5557e9d96b83cf03f73c92163f}\label{handle__int_8c_aa1de7a5557e9d96b83cf03f73c92163f} 
+\index{handle\_int.c@{handle\_int.c}!scancode@{scancode}}
+\index{scancode@{scancode}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_af50f7a04855994a6559b968855d7b866}\label{handle__int_8c_af50f7a04855994a6559b968855d7b866} 
+\index{handle\_int.c@{handle\_int.c}!secondaryBuffer@{secondaryBuffer}}
+\index{secondaryBuffer@{secondaryBuffer}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{secondaryBuffer}{secondaryBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t\texorpdfstring{$\ast$}{*} secondary\+Buffer\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a8e9b0ada4a0dacf939bdac2d2c6b9948}\label{handle__int_8c_a8e9b0ada4a0dacf939bdac2d2c6b9948} 
+\index{handle\_int.c@{handle\_int.c}!sp\_data@{sp\_data}}
+\index{sp\_data@{sp\_data}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{sp\_data}{sp\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t sp\+\_\+data\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a78476cfb8388653c6f96a6fac0982e5e}\label{handle__int_8c_a78476cfb8388653c6f96a6fac0982e5e} 
+\index{handle\_int.c@{handle\_int.c}!time\_info@{time\_info}}
+\index{time\_info@{time\_info}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{time\_info}{time\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_r_t_c__structure}{RTC\+\_\+structure}} time\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a4da4f222b545dc9fd4d3b7321bf5dd21}\label{handle__int_8c_a4da4f222b545dc9fd4d3b7321bf5dd21} 
+\index{handle\_int.c@{handle\_int.c}!timer\_break@{timer\_break}}
+\index{timer\_break@{timer\_break}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{timer\_break}{timer\_break}}
+{\footnotesize\ttfamily int timer\+\_\+break = 0}
+
+\Hypertarget{handle__int_8c_a9c68d9b8267aa9c441dd055dd51a8907}\label{handle__int_8c_a9c68d9b8267aa9c441dd055dd51a8907} 
+\index{handle\_int.c@{handle\_int.c}!two\_player@{two\_player}}
+\index{two\_player@{two\_player}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{two\_player}{two\_player}}
+{\footnotesize\ttfamily bool two\+\_\+player\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_ad87b674fa68e60709d0a728505d056f9}\label{handle__int_8c_ad87b674fa68e60709d0a728505d056f9} 
+\index{handle\_int.c@{handle\_int.c}!UpFrameFireboy@{UpFrameFireboy}}
+\index{UpFrameFireboy@{UpFrameFireboy}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{UpFrameFireboy}{UpFrameFireboy}}
+{\footnotesize\ttfamily int Up\+Frame\+Fireboy\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_ae7dd8a14efdf868fffe8a237869f1745}\label{handle__int_8c_ae7dd8a14efdf868fffe8a237869f1745} 
+\index{handle\_int.c@{handle\_int.c}!UpFrameWatergirl@{UpFrameWatergirl}}
+\index{UpFrameWatergirl@{UpFrameWatergirl}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{UpFrameWatergirl}{UpFrameWatergirl}}
+{\footnotesize\ttfamily int Up\+Frame\+Watergirl\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a7e044de5b237f04c3c1a6bcc25bbd61f}\label{handle__int_8c_a7e044de5b237f04c3c1a6bcc25bbd61f} 
+\index{handle\_int.c@{handle\_int.c}!upwardMotionFireboy@{upwardMotionFireboy}}
+\index{upwardMotionFireboy@{upwardMotionFireboy}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{upwardMotionFireboy}{upwardMotionFireboy}}
+{\footnotesize\ttfamily bool upward\+Motion\+Fireboy\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a903da50781a5b02df2722d65c9b5593e}\label{handle__int_8c_a903da50781a5b02df2722d65c9b5593e} 
+\index{handle\_int.c@{handle\_int.c}!upwardMotionWatergirl@{upwardMotionWatergirl}}
+\index{upwardMotionWatergirl@{upwardMotionWatergirl}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{upwardMotionWatergirl}{upwardMotionWatergirl}}
+{\footnotesize\ttfamily bool upward\+Motion\+Watergirl\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a3f79b04e621cae90f2c5ad2786ee153f}\label{handle__int_8c_a3f79b04e621cae90f2c5ad2786ee153f} 
+\index{handle\_int.c@{handle\_int.c}!vbe\_info@{vbe\_info}}
+\index{vbe\_info@{vbe\_info}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{vbe\_info}{vbe\_info}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vbe\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a704cec5ef139d5c62cda55a33630481c}\label{handle__int_8c_a704cec5ef139d5c62cda55a33630481c} 
+\index{handle\_int.c@{handle\_int.c}!watergirlInAir@{watergirlInAir}}
+\index{watergirlInAir@{watergirlInAir}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{watergirlInAir}{watergirlInAir}}
+{\footnotesize\ttfamily bool watergirl\+In\+Air\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a64f0a67f57437d364c1a81a3beff6dd4}\label{handle__int_8c_a64f0a67f57437d364c1a81a3beff6dd4} 
+\index{handle\_int.c@{handle\_int.c}!watergirlOnTopOfPlatform@{watergirlOnTopOfPlatform}}
+\index{watergirlOnTopOfPlatform@{watergirlOnTopOfPlatform}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{watergirlOnTopOfPlatform}{watergirlOnTopOfPlatform}}
+{\footnotesize\ttfamily bool watergirl\+On\+Top\+Of\+Platform\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a3f33b01e0a09280450911368d7735120}\label{handle__int_8c_a3f33b01e0a09280450911368d7735120} 
+\index{handle\_int.c@{handle\_int.c}!watergirlState@{watergirlState}}
+\index{watergirlState@{watergirlState}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{watergirlState}{watergirlState}}
+{\footnotesize\ttfamily int watergirl\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a87f9005a3bb53f4f3d2b52cab76fe851}\label{handle__int_8c_a87f9005a3bb53f4f3d2b52cab76fe851} 
+\index{handle\_int.c@{handle\_int.c}!watergirlWin@{watergirlWin}}
+\index{watergirlWin@{watergirlWin}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{watergirlWin}{watergirlWin}}
+{\footnotesize\ttfamily bool watergirl\+Win\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a4f5c29b2afa624713e433cdb57747d67}\label{handle__int_8c_a4f5c29b2afa624713e433cdb57747d67} 
+\index{handle\_int.c@{handle\_int.c}!xOffsetFireboy@{xOffsetFireboy}}
+\index{xOffsetFireboy@{xOffsetFireboy}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{xOffsetFireboy}{xOffsetFireboy}}
+{\footnotesize\ttfamily int x\+Offset\+Fireboy\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a3d379500169935021117c75419b8b469}\label{handle__int_8c_a3d379500169935021117c75419b8b469} 
+\index{handle\_int.c@{handle\_int.c}!xOffsetWatergirl@{xOffsetWatergirl}}
+\index{xOffsetWatergirl@{xOffsetWatergirl}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{xOffsetWatergirl}{xOffsetWatergirl}}
+{\footnotesize\ttfamily int x\+Offset\+Watergirl\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_aefae1c2d69b0f78c57e52740bf8e410b}\label{handle__int_8c_aefae1c2d69b0f78c57e52740bf8e410b} 
+\index{handle\_int.c@{handle\_int.c}!yOffsetFireboy@{yOffsetFireboy}}
+\index{yOffsetFireboy@{yOffsetFireboy}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{yOffsetFireboy}{yOffsetFireboy}}
+{\footnotesize\ttfamily int y\+Offset\+Fireboy\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_a39ea6b300c167707ec6799e13879c45b}\label{handle__int_8c_a39ea6b300c167707ec6799e13879c45b} 
+\index{handle\_int.c@{handle\_int.c}!yOffsetWatergirl@{yOffsetWatergirl}}
+\index{yOffsetWatergirl@{yOffsetWatergirl}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{yOffsetWatergirl}{yOffsetWatergirl}}
+{\footnotesize\ttfamily int y\+Offset\+Watergirl\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handle__int_8c_aabf5bde83eb3500aa597add1a0441fa5}\label{handle__int_8c_aabf5bde83eb3500aa597add1a0441fa5} 
+\index{handle\_int.c@{handle\_int.c}!yPlatformBlockOffset@{yPlatformBlockOffset}}
+\index{yPlatformBlockOffset@{yPlatformBlockOffset}!handle\_int.c@{handle\_int.c}}
+\doxysubsubsection{\texorpdfstring{yPlatformBlockOffset}{yPlatformBlockOffset}}
+{\footnotesize\ttfamily int y\+Platform\+Block\+Offset\hspace{0.3cm}{\ttfamily [extern]}}
+

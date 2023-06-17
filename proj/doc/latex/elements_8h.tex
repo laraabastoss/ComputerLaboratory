@@ -1,0 +1,245 @@
+\doxysection{game/elements.h File Reference}
+\hypertarget{elements_8h}{}\label{elements_8h}\index{game/elements.h@{game/elements.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}devices/video/graphics.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/mouse/mouse.\+h\"{}}\newline
+{\ttfamily \#include \"{}devices/rtc/rtc.\+h\"{}}\newline
+{\ttfamily \#include \"{}sprites/sprite.\+h\"{}}\newline
+{\ttfamily \#include \"{}handle\+\_\+int.\+h\"{}}\newline
+Include dependency graph for elements.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{elements_8h_a59c0df8a9001ec8997aca3ae4ff1dd82}{update\+Array\+With\+Level}} (int \mbox{\hyperlink{draw_8c_acf4d33ee4cff36f69b924471174dcb11}{level}})
+\begin{DoxyCompactList}\small\item\em loads a previously allocated array with the current level using a txt file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_ad06989ea1ce0368e3c98231f532c590f}{alocate\+Level\+Array\+Memory}} ()
+\begin{DoxyCompactList}\small\item\em alocates memory for an array of size 1200 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_aec06b94fd6e4befc36f02655e74546f4}{free\+Level\+Array}} ()
+\begin{DoxyCompactList}\small\item\em frees the allocated array for the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_aea99321b8febbf2d4c4943a6f16e5ac2}{check\+Platform\+Logic}} (int max\+\_\+height)
+\begin{DoxyCompactList}\small\item\em moves the plataform upwards \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_a9ef498aaf5e098d4193dbe654709193e}{update\+Fireboy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em updates Fire\+Boy to the desired next position, checking if he can go there according to the bit map and his current state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_a1ff1b97e7a41b1e91851a3d231a6ff60}{update\+Watergirl}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em updates Water\+Girl to the desired next position, checking if she can go there according to the bit map and her current state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_a8e86a8cb37d0d833d0329bda3f6a35e8}{check\+Gravity\+Fireboy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em checks if Fireboy is on top of a plataform, if not he falls \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_acc251a731ac1de44a3ed61437d258a90}{check\+Gravity\+Watergirl}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em checks if Water\+Girl is on top of a plataform, if not she falls \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{elements_8h_ad06989ea1ce0368e3c98231f532c590f}\label{elements_8h_ad06989ea1ce0368e3c98231f532c590f} 
+\index{elements.h@{elements.h}!alocateLevelArrayMemory@{alocateLevelArrayMemory}}
+\index{alocateLevelArrayMemory@{alocateLevelArrayMemory}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{alocateLevelArrayMemory()}{alocateLevelArrayMemory()}}
+{\footnotesize\ttfamily void alocate\+Level\+Array\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+alocates memory for an array of size 1200 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{elements_8h_ad06989ea1ce0368e3c98231f532c590f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_a8e86a8cb37d0d833d0329bda3f6a35e8}\label{elements_8h_a8e86a8cb37d0d833d0329bda3f6a35e8} 
+\index{elements.h@{elements.h}!checkGravityFireboy@{checkGravityFireboy}}
+\index{checkGravityFireboy@{checkGravityFireboy}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{checkGravityFireboy()}{checkGravityFireboy()}}
+{\footnotesize\ttfamily void check\+Gravity\+Fireboy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+checks if Fireboy is on top of a plataform, if not he falls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate that the Fire\+Boy is in \\
+\hline
+{\em y} & y coordinate that the Fire\+Boy is in \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_a8e86a8cb37d0d833d0329bda3f6a35e8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_acc251a731ac1de44a3ed61437d258a90}\label{elements_8h_acc251a731ac1de44a3ed61437d258a90} 
+\index{elements.h@{elements.h}!checkGravityWatergirl@{checkGravityWatergirl}}
+\index{checkGravityWatergirl@{checkGravityWatergirl}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{checkGravityWatergirl()}{checkGravityWatergirl()}}
+{\footnotesize\ttfamily void check\+Gravity\+Watergirl (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+checks if Water\+Girl is on top of a plataform, if not she falls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate that the Water\+Girl is in \\
+\hline
+{\em y} & y coordinate that the Water\+Girl is in \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_acc251a731ac1de44a3ed61437d258a90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_aea99321b8febbf2d4c4943a6f16e5ac2}\label{elements_8h_aea99321b8febbf2d4c4943a6f16e5ac2} 
+\index{elements.h@{elements.h}!checkPlatformLogic@{checkPlatformLogic}}
+\index{checkPlatformLogic@{checkPlatformLogic}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{checkPlatformLogic()}{checkPlatformLogic()}}
+{\footnotesize\ttfamily void check\+Platform\+Logic (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+moves the plataform upwards 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+height} & maximum height the plataform can go to \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_aea99321b8febbf2d4c4943a6f16e5ac2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_aec06b94fd6e4befc36f02655e74546f4}\label{elements_8h_aec06b94fd6e4befc36f02655e74546f4} 
+\index{elements.h@{elements.h}!freeLevelArray@{freeLevelArray}}
+\index{freeLevelArray@{freeLevelArray}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{freeLevelArray()}{freeLevelArray()}}
+{\footnotesize\ttfamily void free\+Level\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+frees the allocated array for the level 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{elements_8h_aec06b94fd6e4befc36f02655e74546f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_a59c0df8a9001ec8997aca3ae4ff1dd82}\label{elements_8h_a59c0df8a9001ec8997aca3ae4ff1dd82} 
+\index{elements.h@{elements.h}!updateArrayWithLevel@{updateArrayWithLevel}}
+\index{updateArrayWithLevel@{updateArrayWithLevel}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{updateArrayWithLevel()}{updateArrayWithLevel()}}
+{\footnotesize\ttfamily void update\+Array\+With\+Level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+loads a previously allocated array with the current level using a txt file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & current level of the user \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_a59c0df8a9001ec8997aca3ae4ff1dd82_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_a9ef498aaf5e098d4193dbe654709193e}\label{elements_8h_a9ef498aaf5e098d4193dbe654709193e} 
+\index{elements.h@{elements.h}!updateFireboy@{updateFireboy}}
+\index{updateFireboy@{updateFireboy}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{updateFireboy()}{updateFireboy()}}
+{\footnotesize\ttfamily void update\+Fireboy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+updates Fire\+Boy to the desired next position, checking if he can go there according to the bit map and his current state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate the Fire\+Boy wants to go to \\
+\hline
+{\em y} & y coordinate the Fire\+Boy wants to go to \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_a9ef498aaf5e098d4193dbe654709193e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_a9ef498aaf5e098d4193dbe654709193e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{elements_8h_a1ff1b97e7a41b1e91851a3d231a6ff60}\label{elements_8h_a1ff1b97e7a41b1e91851a3d231a6ff60} 
+\index{elements.h@{elements.h}!updateWatergirl@{updateWatergirl}}
+\index{updateWatergirl@{updateWatergirl}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{updateWatergirl()}{updateWatergirl()}}
+{\footnotesize\ttfamily void update\+Watergirl (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+updates Water\+Girl to the desired next position, checking if she can go there according to the bit map and her current state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate the Water\+Girl wants to go to \\
+\hline
+{\em y} & y coordinate the Water\+Girl wants to go to \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_a1ff1b97e7a41b1e91851a3d231a6ff60_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{elements_8h_a1ff1b97e7a41b1e91851a3d231a6ff60_icgraph}
+\end{center}
+\end{figure}

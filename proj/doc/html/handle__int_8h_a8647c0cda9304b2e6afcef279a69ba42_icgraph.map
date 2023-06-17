@@ -1,0 +1,12 @@
+<map id="resetVariables" name="resetVariables">
+<area shape="rect" id="Node000001" title="resets all the variables used for the characters and the obstacules movements everytime a level is wo..." alt="" coords="524,31,628,56"/>
+<area shape="rect" id="Node000002" href="$handle__int_8c.html#ad9a0ce174cc6729af07e0dd89bc924bc" title="interacts with the game everytime there is a mouse interrupt and the right button is clicked,..." alt="" coords="305,5,465,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="509,37,465,31,466,26,510,32"/>
+<area shape="rect" id="Node000005" href="$handle__int_8c.html#a66ed4cf9cdbf28ab9a0e13173a373ef9" title="interacts with the game everytime there is a serial port interrupt in the multiplayer mode,..." alt="" coords="294,55,476,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="510,54,477,59,477,53,509,49"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a46fea93bf5d63e93090fbb95b742b881" title=" " alt="" coords="162,31,246,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="291,34,247,40,246,35,290,29"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,114,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,46,114,46,114,41,146,41"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="279,56,246,52,247,46,280,51"/>
+</map>

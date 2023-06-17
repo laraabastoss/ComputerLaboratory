@@ -1,0 +1,7 @@
+<map id="wait_menu" name="wait_menu">
+<area shape="rect" id="Node000001" title="draws the menu for when, in the multiplayer mode, the first player is waiting for the second one to c..." alt="" coords="5,5,90,31"/>
+<area shape="rect" id="Node000002" href="$sprite__management_8c.html#a358dde0e0e62eb0399a63639c27089e6" title="draw a new Sprite" alt="" coords="138,5,221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,16,123,16,123,21,90,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a950e17209d152e8a40ec064a0b201b25" title="draws one pixel in the screen" alt="" coords="269,5,352,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,16,254,16,254,21,221,21"/>
+</map>

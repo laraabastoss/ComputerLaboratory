@@ -1,0 +1,7 @@
+<map id="destroy_sprites" name="destroy_sprites">
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,5,394,31"/>
+<area shape="rect" id="Node000002" href="$main_8c.html#abdcc0cd526b667641db5dc072cc162c4" title=" " alt="" coords="162,5,236,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,21,236,21,236,16,269,16"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,114,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,21,114,21,114,16,147,16"/>
+</map>

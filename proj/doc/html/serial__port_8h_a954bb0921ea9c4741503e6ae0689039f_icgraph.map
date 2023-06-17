@@ -1,0 +1,42 @@
+<map id="sp_send_data" name="sp_send_data">
+<area shape="rect" id="Node000001" title="send data to the opposite serial port" alt="" coords="966,283,1069,309"/>
+<area shape="rect" id="Node000002" href="$draw_8c.html#a9f1c87c7296779c4c895ca2b13ad2e3e" title="draws the game screen" alt="" coords="682,199,735,225"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="998,272,965,232,942,213,917,198,894,191,869,187,819,187,773,195,736,205,735,200,772,190,819,182,870,181,895,185,919,193,945,208,968,228,1002,269"/>
+<area shape="rect" id="Node000007" href="$handle__int_8c.html#a293e68cd22ee8891ead7e26c7ce81653" title="interacts with the game everytime there is a keyboard interrupt in the multiplayer mode,..." alt="" coords="313,298,458,339"/>
+<area shape="poly" id="edge19_Node000001_Node000007" title=" " alt="" coords="951,301,458,319,458,313,951,295"/>
+<area shape="rect" id="Node000008" href="$handle__int_8c.html#ad9a0ce174cc6729af07e0dd89bc924bc" title="interacts with the game everytime there is a mouse interrupt and the right button is clicked,..." alt="" coords="305,363,465,389"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="951,307,466,368,465,363,951,301"/>
+<area shape="rect" id="Node000012" href="$handle__int_8c.html#ae113fc9cbcb554d0656c9f376bab6632" title="interacts with the game everytime there is a serial port interrupt, checking wahtºs the current state..." alt="" coords="658,412,759,438"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="1001,322,966,361,944,380,920,395,879,411,837,421,760,429,759,423,836,416,878,406,917,391,941,376,963,357,997,319"/>
+<area shape="rect" id="Node000013" href="$elements_8c.html#a9ef498aaf5e098d4193dbe654709193e" title="updates FireBoy to the desired next position, checking if he can go there according to the bit map an..." alt="" coords="811,208,914,234"/>
+<area shape="poly" id="edge23_Node000001_Node000013" title=" " alt="" coords="977,278,917,247,894,237,896,232,919,243,980,273"/>
+<area shape="rect" id="Node000014" href="$elements_8c.html#a1ff1b97e7a41b1e91851a3d231a6ff60" title="updates WaterGirl to the desired next position, checking if she can go there according to the bit map..." alt="" coords="807,258,918,283"/>
+<area shape="poly" id="edge25_Node000001_Node000014" title=" " alt="" coords="951,288,918,282,919,277,952,282"/>
+<area shape="rect" id="Node000003" href="$draw_8c.html#a9b1720e8984c61a5866361e5234bfc8a" title="draws a new frame depending on the current state of the game" alt="" coords="524,199,610,225"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="667,223,610,223,610,217,667,217"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="624,200,682,202,681,207,624,206"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a46fea93bf5d63e93090fbb95b742b881" title=" " alt="" coords="162,199,246,225"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="544,190,514,162,475,140,426,124,385,119,344,124,295,140,271,152,250,168,217,200,214,197,246,164,268,147,293,135,343,119,385,114,427,119,477,135,517,157,548,186"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,99,114,125"/>
+<area shape="poly" id="edge18_Node000003_Node000005" title=" " alt="" coords="558,185,549,149,533,108,509,69,493,52,475,38,450,25,423,16,368,8,311,12,255,25,201,43,154,63,83,101,81,96,151,58,199,38,253,19,310,7,368,3,425,11,452,20,478,33,497,48,513,65,538,106,554,148,563,184"/>
+<area shape="rect" id="Node000006" href="$handle__int_8c.html#a5587175760c801902df41c23595504e5" title="interacts with the game everytime there is a keyboard interrupt, moving the characters according to t..." alt="" coords="315,150,455,175"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="509,198,476,189,437,178,438,173,477,184,511,193"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="545,237,514,263,478,289,455,300,452,295,475,284,511,259,541,233"/>
+<area shape="poly" id="edge10_Node000003_Node000008" title=" " alt="" coords="558,240,528,297,505,327,478,353,456,365,453,360,475,348,501,323,523,294,553,237"/>
+<area shape="rect" id="Node000009" href="$handle__int_8c.html#ac26df66d75851dc8f7d1706e2daa70ff" title="interacts with the game everytime there is a rtc interrupt, changing the data displayed on top of the..." alt="" coords="334,199,436,225"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="510,214,437,214,437,209,510,209"/>
+<area shape="rect" id="Node000010" href="$handle__int_8c.html#a3805e8c0c25474ab315fa8b95eb5dea0" title="interacts with the game everytime there is a timer interrupt, used for the characters jumps and to mo..." alt="" coords="327,248,443,274"/>
+<area shape="poly" id="edge14_Node000003_Node000010" title=" " alt="" coords="511,230,477,240,438,250,437,245,476,235,509,225"/>
+<area shape="rect" id="Node000011" href="$handle__int_8c.html#a66ed4cf9cdbf28ab9a0e13173a373ef9" title="interacts with the game everytime there is a serial port interrupt in the multiplayer mode,..." alt="" coords="294,48,476,74"/>
+<area shape="poly" id="edge16_Node000003_Node000011" title=" " alt="" coords="550,187,519,140,498,116,475,95,439,77,442,72,478,91,502,112,523,137,554,184"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="170,192,78,127,81,123,173,188"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="320,182,295,189,247,202,246,197,293,184,318,177"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="302,294,293,289,249,257,216,227,220,223,252,253,295,284,305,289"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="301,358,292,352,261,322,237,287,208,226,212,224,241,284,265,319,296,348,304,354"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="319,214,247,214,247,209,319,209"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="318,246,293,240,246,226,247,221,295,235,320,241"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="318,82,296,95,268,120,245,149,214,200,210,197,241,146,264,117,292,91,315,78"/>
+<area shape="poly" id="edge22_Node000012_Node000004" title=" " alt="" coords="644,443,567,454,475,456,427,452,380,442,335,426,292,403,271,385,252,362,226,311,211,262,204,225,209,224,216,261,231,309,257,359,274,381,296,399,337,421,381,437,428,446,476,451,567,448,643,437"/>
+<area shape="poly" id="edge24_Node000013_Node000002" title=" " alt="" coords="796,220,735,216,736,211,796,214"/>
+<area shape="poly" id="edge26_Node000014_Node000002" title=" " alt="" coords="812,254,734,224,736,219,814,249"/>
+</map>

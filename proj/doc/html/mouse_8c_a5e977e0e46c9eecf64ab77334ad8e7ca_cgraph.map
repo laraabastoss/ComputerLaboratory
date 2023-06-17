@@ -1,0 +1,7 @@
+<map id="mouse_interrupt_handler" name="mouse_interrupt_handler">
+<area shape="rect" id="Node000001" title="mouse interrupt handler, whenever it receives an interrupt from the mouse it updates the current_byte..." alt="" coords="5,5,169,31"/>
+<area shape="rect" id="Node000002" href="$_k_b_c_8c.html#a84344e13f11453f244f4329aaf053457" title="reads the output that is currently in the KBC" alt="" coords="217,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,202,16,202,21,169,21"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="382,5,472,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,16,367,16,367,21,334,21"/>
+</map>

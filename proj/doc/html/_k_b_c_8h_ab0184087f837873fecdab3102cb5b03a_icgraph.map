@@ -1,0 +1,12 @@
+<map id="get_output_KBC" name="get_output_KBC">
+<area shape="rect" id="Node000001" title="reads the output that is currently in the KBC" alt="" coords="505,42,623,68"/>
+<area shape="rect" id="Node000002" href="$keyboard_8c.html#aee7480a4c3fc49a7d49a54e8073193f6" title="keyboard interrupt handler, whenever there´s an interrupt from the keyboard it updates the global var..." alt="" coords="312,5,440,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="490,46,439,38,440,33,491,41"/>
+<area shape="rect" id="Node000005" href="$mouse_8c.html#a5e977e0e46c9eecf64ab77334ad8e7ca" title="mouse interrupt handler, whenever it receives an interrupt from the mouse it updates the current_byte..." alt="" coords="294,70,457,96"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="491,69,458,73,457,68,490,63"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a46fea93bf5d63e93090fbb95b742b881" title=" " alt="" coords="162,42,246,68"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,42,247,50,246,45,296,37"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,42,114,68"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,58,114,58,114,52,146,52"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="279,70,246,64,247,59,280,65"/>
+</map>

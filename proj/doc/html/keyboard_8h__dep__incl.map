@@ -1,0 +1,12 @@
+<map id="devices/keyboard/keyboard.h" name="devices/keyboard/keyboard.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="175,5,366,31"/>
+<area shape="rect" id="Node000002" href="$keyboard_8c.html" title=" " alt="" coords="5,79,197,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,40,131,81,129,76,227,35"/>
+<area shape="rect" id="Node000003" href="$game_8h.html" title=" " alt="" coords="220,79,321,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,46,273,79,268,79,268,46"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title=" " alt="" coords="328,153,389,178"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="300,38,319,56,335,78,352,117,359,152,354,153,347,119,331,80,315,60,296,42"/>
+<area shape="rect" id="Node000004" href="$game_8c.html" title=" " alt="" coords="204,153,305,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,120,260,153,254,152,262,118"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="298,112,345,150,342,154,295,116"/>
+</map>

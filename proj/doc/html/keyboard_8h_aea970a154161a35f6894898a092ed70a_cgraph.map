@@ -1,0 +1,10 @@
+<map id="kbc_ih" name="kbc_ih">
+<area shape="rect" id="Node000001" title="keyboard interrupt handler, whenever there´s an interrupt from the keyboard it updates the global var..." alt="" coords="5,31,65,56"/>
+<area shape="rect" id="Node000002" href="$_k_b_c_8c.html#a52ac1bb096b341741d01d49dd38c0cd4" title=" " alt="" coords="113,31,237,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,41,98,41,98,46,65,46"/>
+<area shape="rect" id="Node000003" href="$_k_b_c_8c.html#ac024af91b156e4fc61ee3886b891de21" title=" " alt="" coords="285,5,409,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,32,270,27,271,32,238,37"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="457,31,548,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="237,41,443,41,443,46,237,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="410,26,443,31,442,36,409,31"/>
+</map>

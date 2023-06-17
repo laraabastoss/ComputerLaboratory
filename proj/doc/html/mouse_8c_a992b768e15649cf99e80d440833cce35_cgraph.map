@@ -1,0 +1,8 @@
+<map id="activate_mouse_datareport" name="activate_mouse_datareport">
+<area shape="rect" id="Node000001" title="activates the data reporto to the mouse" alt="" coords="5,5,184,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="wrapper to the sys_inb system call, fetches an 8 bits varibale instead of a 32 bits one" alt="" coords="428,5,518,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,16,413,16,413,21,184,21"/>
+<area shape="rect" id="Node000003" href="$_k_b_c_8c.html#a4ff65c3d42fc518a680dc2b7c98d0102" title="writes a command to the KBC" alt="" coords="232,31,380,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,26,218,30,217,36,184,32"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="380,30,413,25,414,30,381,35"/>
+</map>

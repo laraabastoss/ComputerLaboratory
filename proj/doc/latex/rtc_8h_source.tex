@@ -1,0 +1,33 @@
+\doxysection{rtc.\+h}
+\hypertarget{rtc_8h_source}{}\label{rtc_8h_source}\index{devices/rtc/rtc.h@{devices/rtc/rtc.h}}
+\mbox{\hyperlink{rtc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <minix/sysutil.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ IRQ\_RTC\ \ \ \ \ \ \ \ \ \ \ \ \ 8}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00010\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c__structure_a6cb9182f36c3b5a4b062b37598524bf7}{year}};}
+\DoxyCodeLine{00011\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c__structure_afd4eecd416a7c52f867ca528c84e2b15}{month}};}
+\DoxyCodeLine{00012\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c__structure_a2ab44cf36e78731423ebbfe2802e4d32}{day}};}
+\DoxyCodeLine{00013\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c__structure_a4dcdcb6fcdd4e7159e00f345317e6078}{hour}};}
+\DoxyCodeLine{00014\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c__structure_afceaec9ca2e5b839f3b8b0c261ceba6a}{minute}};}
+\DoxyCodeLine{00015\ \}\ \mbox{\hyperlink{struct_r_t_c__structure}{RTC\_structure}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_abb90a7b2307300874b2529d94aafacca}{rtc\_subscribe\_interrupts}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_ae0e5cb47db8832528abb7dc48255cd3a}{rtc\_unsubscribe\_interrupts}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_acc27f9c026d296d1955ae73ebe991c12}{get\_rtc\_output}}(uint8\_t\ infoByte,\ uint8\_t\ *answer);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{rtc_8h_a8e599478b1e44cfef3a03f91854754a6}{fill\_rtc\_structure}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ uint8\_t\ \mbox{\hyperlink{rtc_8h_a6f349db8e83e9d8ad23690b86a8a76b3}{check\_binary}}(\textcolor{keywordtype}{int}\ bit);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
