@@ -1,7 +1,7 @@
 # Computer Laboratory
 year 2, semestre 2
 
-## Final Grade: 18/20
+## Final Grade: 20/20
 
 ### Project - FireBoy & WaterGirl (Grade: 19,81/20)
 
