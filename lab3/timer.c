@@ -9,6 +9,8 @@
 int hook_id=0;
 int counter=0;
 
+
+
 int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
   //define a frequencia no timer
   if (freq<19||freq>TIMER_FREQ) return 1;
