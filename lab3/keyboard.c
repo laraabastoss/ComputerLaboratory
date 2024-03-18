@@ -89,42 +89,6 @@ int (keyboard_unsubscribe_interrupts)(){
   //atualiza o scancode que vamos dar como variavel global dentro daquele ficheiro
   //read_KBC_output(0x60,&scancode);
 
- /*void (kbc_ih)() {
-
-  uint8_t status;
-  if (util_sys_inb(0x64, &status) == 1) return;
-  counter++;
-  if ((status & 0x01) == 0) return;
-  // check communication errors  
-  if ((status & 0xC0) != 0) return;
-
-  if (util_sys_inb(0x60, &scancode2[idx]) == 1) return;
-  //printf(idx);
-  //printf(scancode2[idx]);
-  counter++;
-  if ((scancode2[idx] & BIT(7))) make = false;
-  else make = true;
-  if (scancode2[idx] == 0xE0) {
-    isScancode = true;
-    size = 2;
-    idx = 1;
-    scancode2[0] = 0xE0;
-  }
-  else if (isScancode == false) {
-    size = 1;
-  }
-  else {
-    if ((scancode2[idx] & BIT(7))) make = false;
-    else make = true;
-    idx = 0;
-    isScancode = false;
-  }
-}*/
-
-
-
-
-
 
 int (enable_interrupts)(){
   
@@ -148,27 +112,20 @@ int (enable_interrupts)(){
 BIT(0)->indicar ativação de bits de interrupção
 */
 
-
-/*void (kbc_ih)(){
-  //atualiza o scancode que vamos dar como variavel global dentro daquele ficheiro
-  read_KBC_output(0x60, &scancode);
-}*/
-
 void (kbc_ih)() {
   if (wait!=true)  size = 1;
   read_KBC_output(0x60, &scancode_array[curr_byte]);
   wait = false;
   if (scancode_array[curr_byte] == 0xE0) {
-    wait = true;
-    size = 2;
     curr_byte = 1;
-    scancode_array[0] = 0xE0;
+    wait = true;
   }
   else if (wait == false) {
-    
     if ((scancode_array[curr_byte] & BIT(7))) isMake = false;
     else isMake = true;
     curr_byte = 0;
 
   }
 }
+
+
