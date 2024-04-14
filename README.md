@@ -3,6 +3,8 @@ year 2, semestre 2
 
 ## Final Grade: 20/20
 
+<b> DISCLAIMER </b>: This repository was created for educational purposes and I do not take any responsibility for anything related to its content. You are free to use any code or algorithm you find, <b>but do so at your own risk</b>.
+
 ### Project - FireBoy & WaterGirl (Grade: 19,81/20)
 
   Adaptation of the **FireBoy & WaterGirl** game developed using the Minix operating system.
