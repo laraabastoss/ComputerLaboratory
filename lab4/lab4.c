@@ -28,10 +28,9 @@ control:
 */
 #include <lcom/lcf.h>
 
-#include "KBC.c"
+
 #include "i8042.h"
 #include "i8254.h"
-#include "mouse.h"
 #include "timer.c"
 #include <stdint.h>
 #include <stdio.h>
@@ -69,10 +68,10 @@ int main(int argc, char *argv[]) {
 
 typedef enum {
   START,
-  LINE_DOWN,
-  TOP,
-  LINE_UP,
-  FINISH
+  DOWN,
+  VERTEX,
+  UP,
+  END
 } SystemState;
 
 SystemState state = START;
@@ -84,7 +83,7 @@ int(mouse_test_packet)(uint32_t cnt) {
   uint8_t mouse_mask;
   if (mouse_mode_d4(0xF4))
     return 1;
-  if (mouse_subscribe_int(&mouse_mask))
+  if (mouse_subscribe_interrupts(&mouse_mask))
     return 1;
   while (cnt) { // Só termina quando lermos @cnt pacotes
 
@@ -110,7 +109,7 @@ int(mouse_test_packet)(uint32_t cnt) {
     }
   }
 
-  if (mouse_unsubscribe_int())
+  if (mouse_unsubscribe_interrupts())
     return 1;
    if (mouse_disable_stream())
     return 1;
@@ -127,7 +126,7 @@ int(mouse_test_async)(uint8_t idle_time) {
     
   if (mouse_mode_d4(0xF4))
     return 1;
-  if (mouse_subscribe_int(&mouse_mask))
+  if (mouse_subscribe_interrupts(&mouse_mask))
     return 1;
   
   while (seconds < idle_time) { // Só termina quando lermos @cnt pacotes
@@ -164,7 +163,7 @@ int(mouse_test_async)(uint8_t idle_time) {
   if (timer_unsubscribe_int())
     return 1;
  
-  if (mouse_unsubscribe_int())
+  if (mouse_unsubscribe_interrupts())
     return 1;
 
    if (mouse_mode_d4(0xF5))
@@ -180,20 +179,20 @@ void updateStateMachine(uint8_t x_len, uint8_t tolerance) {
       // transição I
       // se só o left-button estiver pressionado
       if (mouse_packet.lb && !mouse_packet.rb && !mouse_packet.mb) {
-        state = LINE_UP;
+        state = UP;
       }
 
       break;
 
-    case LINE_UP:
+    case UP:
 
-
+        printf("up");
       if (mouse_packet.lb && !mouse_packet.rb && !mouse_packet.mb && mouse_packet.delta_x>0 &&  mouse_packet.delta_y / mouse_packet.delta_x >= 1){
         break;
       }
 
       else if (!mouse_packet.lb){
-        state = TOP;
+        state = VERTEX;
         break;
       }
 
@@ -202,23 +201,25 @@ void updateStateMachine(uint8_t x_len, uint8_t tolerance) {
         break;
       }
 
-    case TOP:
+    case VERTEX:
 
+      printf("vertex");
 
       if (mouse_packet.rb){
-        state = LINE_DOWN;
+        state = DOWN;
         break;
       }
 
       else{
-         state = TOP;
+         state = VERTEX;
          break;
       }
 
 
 
-    case LINE_DOWN:
+    case DOWN:
 
+      printf("down");
 
       if (!mouse_packet.lb && mouse_packet.rb && !mouse_packet.mb && mouse_packet.delta_x>0 &&  mouse_packet.delta_y / mouse_packet.delta_x <= -1){
         break;
@@ -245,10 +246,10 @@ int(mouse_test_gesture)(uint8_t x_len, uint8_t tolerance) {
   uint8_t mouse_mask;
   if (mouse_mode_d4(0xF4))
     return 1;
-  if (mouse_subscribe_int(&mouse_mask))
+  if (mouse_subscribe_interrupts(&mouse_mask))
     return 1;
  
-  while (state != FINISH) { // Só termina quando lermos @cnt pacotes
+  while (state != END) { // Só termina quando lermos @cnt pacotes
 
     if (driver_receive(ANY, &msg, &ipc_status) != 0) {
       printf("Error");
@@ -274,7 +275,7 @@ int(mouse_test_gesture)(uint8_t x_len, uint8_t tolerance) {
   }
 
 
-  if (mouse_unsubscribe_int(0))
+  if (mouse_unsubscribe_interrupts(0))
     return 1;
 
     if (mouse_disable_stream())
